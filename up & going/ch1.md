@@ -1,19 +1,19 @@
 # You Don't Know JS: Up & Going
-# Chapter 1: Into Programming
+# Cápitulo 1: Introducción a la programación
 
-Welcome to the *You Don't Know JS* (*YDKJS*) series.
+Bienvenidos a la serie *You Don't Know JS* (*YDKJS*)
 
-*Up & Going* is an introduction to several basic concepts of programming -- of course we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get *up and going*.
+*Up & Going* is introductorio a varios conceptos básicos de programación -- por supuesto apuntando a JavaScript (normalmente abreviado a JS) específicamente -- a como acercarse y entender el resto de los títulos de esta serie. Especialmente si hasta ahora se está comenzando a programar y/o JavaScript, este libro explicará brevemente lo que se necesita para comenzar
 
-This book starts off explaining the basic principles of programming at a very high level. It's mostly intended if you are starting *YDKJS* with little to no prior programming experience, and are looking to these books to help get you started along a path to understanding programming through the lens of JavaScript.
+Este libro comienza explicando los conceptos básicos de programación a un alto nivel. Es más apuntado a lectores que están comenzando a leer *YDKJS* con poca o nada experiencia de programación, y viendo este conjunto de libros para comenzar el camino introductorio de la programación, a través de los lentes de JavaScript.
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
+El capítulo 1 está enfocado a una visión general de todas las cosas que se deberían aprender y practicar al querer entrar a *programar*. Hay también otros recursos introductorios fantásticos que le ayudarán a entender más estos temas a mayor profundidad, y recomiendo que los lea aparte de este capítulo.
 
-Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+Una vez se sienta cómo con los temas basicos de programación, capítulo que lo guiará a familiarizarse con la forma de escribir código en JavaScript. Capitulo dos introduce JavaScript, sin embargo, no de una manera profunda y no es una guia completa -- para eso están los restos de libros de *YDKJS*!
 
-If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
+Si ya se siente cómodo con JavaScript, revise de primero el capítulo 3 como un repaso y una pequeña introducción a lo que debe esperar de *YDKJS*. Comenzemos.
 
-## Code
+## Código
 
 Iniciemos desde los origenes.
 
