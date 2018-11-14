@@ -15,11 +15,12 @@ If you're already fairly comfortable with JavaScript, first check out Chapter 3 
 
 ## Code
 
-Let's start from the beginning.
+Iniciemos desde los origenes.
 
-A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+Un programa, en ocasiones denominado *código fuente* o *código*, es un conjunto especial de instrucciones que indican a un computador que tareas debe realizar.
+Usalmente el código se almacena en un archivo de texto, sin embargo con JavaScript puedes escribir  y ejecutar código en la consola del navegador, de lo cual hablaremos más adelante.
 
-The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+Las reglas que validan el formato y el conjunto de instrucciones de un programa se denomina *Lenguaje de programación*, aveces referido también como la *sintaxis de un lenguaje*, de manera similar en que hay reglas en el Inglés que indican como pronunciar palabras y como crear oraciones válidas usando estas palabras y signos de puntuación.
 
 ### Statements
 
