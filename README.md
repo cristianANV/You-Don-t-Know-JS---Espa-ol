@@ -13,7 +13,7 @@ Sin embargo, todas contribuciones habrá un `Contributors` pages en Espanõl.
 > pull requests from branches on your fork. To do this, run:
 >
 > ```
-> git remote add upstream https://github.com/EstebanMarin/You-Dont-Know-JS.git
+> git remote add upstream https://github.com/You-Dont-Know-JS-ES/Traduccion.git
 > git fetch upstream
 > git branch --set-upstream-to=upstream/master master
 > ```
