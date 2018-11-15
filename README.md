@@ -9,8 +9,8 @@ Sin embargo, todas contribuciones habrá un `Contributors` pages en Espanõl.
 1. Fork este proyecto y clonar su propio repositorio.
 2. Hacer un branch nuevo `git checkout -b pr/branch-name`
 
-> Tip: Keep your `master` branch pointing at the original repository and make
-> pull requests from branches on your fork. To do this, run:
+> Tip: Mantega el `master` apuntando al repo original (Esto aplica para todos los repos de código libre)
+> Así también se pueden hacer Pull Request desde su branches locales
 >
 > ```
 > git remote add upstream https://github.com/You-Dont-Know-JS-ES/Traduccion.git
@@ -18,11 +18,11 @@ Sin embargo, todas contribuciones habrá un `Contributors` pages en Espanõl.
 > git branch --set-upstream-to=upstream/master master
 > ```
 >
-> This will add the original repository as a "remote" called "upstream," Then
-> fetch the git information from that remote, then set your local `master`
-> branch to use the upstream master branch whenever you run `git pull`. Then you
-> can make all of your pull request branches based on this `master` branch.
-> Whenever you want to update your version of `master`, do a regular `git pull`
+> Esto agregará el repositorio original como "remote" y lo llama "upstream". Luego
+> hará un "Fetch" del git y toda la info que esté remota, haciendo que se `master`
+> local cuando se haga un `git pull` tome toda la información del repo remoto.
+> Luego puede sacar todos los branches del `master` actualizado.
+> De tal manera que siempre recomendamos actualizar `master` siempre.`git pull`
 
 ## PR al momento de iniciar una traducción
 
