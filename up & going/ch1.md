@@ -17,30 +17,28 @@ If you're already fairly comfortable with JavaScript, first check out Chapter 3 
 
 Iniciemos desde los origenes.
 
-Un programa, en ocasiones denominado *código fuente* o *código*, es un conjunto especial de instrucciones que indican a un computador que tareas debe realizar.
-Usalmente el código se almacena en un archivo de texto, sin embargo con JavaScript puedes escribir  y ejecutar código en la consola del navegador, de lo cual hablaremos más adelante.
+Un programa, en ocasiones denominado *código fuente* o *código*, es un conjunto especial de instrucciones que indican a un computador que tareas debe realizar. Usalmente el código se almacena en un archivo de texto, sin embargo con JavaScript puedes escribir  y ejecutar código en la consola del navegador, de lo cual hablaremos más adelante.
 
 Las reglas que validan el formato y el conjunto de instrucciones de un programa se denomina *Lenguaje de programación*, aveces referido también como la *sintaxis de un lenguaje*, de manera similar en que hay reglas en el Inglés que indican como pronunciar palabras y como crear oraciones válidas usando estas palabras y signos de puntuación.
 
-### Statements
+### Sentencias 
 
-In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:
+En un lenguaje de programación, un conjunto de palabras, números, y operadores que llevan a cabo una tarea específica se denomina *sentencia*. En JavaScript, una sentencia podría verse de la siguiente forma: 
 
 ```js
 a = b * 2;
 ```
+Los caracteres `a` y `b` se denominan *variables* (ver "Variables"), que pueden ser vistas como cajas para guardar cualquier elemento. En programación, las variables guardan valores (Como por ejemplo el número `42`) que pueden ser usados por un programa. Puedes pensar en las variables como marcadores simbólicos para los valores por si mismos.
 
-The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
+En contraste, el `2` es sencillamente un valor, lo que se conoce como *Literal value*, porque no se encuentra almacenando en ninguna variable.
 
-By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
+Los caracteres `=` y `*` son *operadores* (ver "Operadores") -- que llevan a cabo acciones con los valores y variables de asignación y multiplicación matemática.
 
-The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
+La mayoría de sentencias en JavaScript terminan con un punto y coma (`;`) al final de la misma.
 
-Most statements in JavaScript conclude with a semicolon (`;`) at the end.
+La sentencia `a = b * 2;` le ordena al computador, leer el valor actual almacenado en la  variable `b`, multiplicar este valor por `2`, y guardar el resultado en una variable que llamamos `a`.
 
-The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
-
-Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
+Los programas son una colección de varias sentencias, que en conjunto describen los pasos que requiere ejecutar un programa con determinado propósito.
 
 ### Expressions
 
