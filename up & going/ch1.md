@@ -40,32 +40,32 @@ La sentencia `a = b * 2;` le ordena al computador, leer el valor actual almacena
 
 Los programas son una colección de varias sentencias, que en conjunto describen los pasos que requiere ejecutar un programa con determinado propósito.
 
-### Expressions
+### Expresiones 
 
-Statements are made up of one or more *expressions*. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.
+Las declaraciones están hechas de una o más *expresiones*. Una expresión es cualquier referencia a una variable o valor, o un conjunto de variables o valores combinado con operadores.
 
-For example:
+Por ejemplo:
 
 ```js
 a = b * 2;
 ```
 
-This statement has four expressions in it:
+Esta declaración tiene varias expresiones en ella:
 
-* `2` is a *literal value expression*
-* `b` is a *variable expression*, which means to retrieve its current value
-* `b * 2` is an *arithmetic expression*, which means to do the multiplication
-* `a = b * 2` is an *assignment expression*, which means to assign the result of the `b * 2` expression to the variable `a` (more on assignments later)
+* `2` es una *expresión literal de valor* 
+* `b` es una *expresión de variable*, que significa buscar su valor actual
+* `b * 2` es una *expresión aritmetica*, que significa hacer la multiplicación
+* `a = b * 2` es una *expresión de asignación*, que significa asignar el resultado de la expresión `b * 2` a la variable `a` (más en el tema de asignación más adelante en el capítulo)
 
-A general expression that stands alone is also called an *expression statement*, such as the following:
+Una expresión general que tiene su propio lugar es también la llamada *expresión de declaración*, como la siguiente
 
 ```js
 b * 2;
 ```
 
-This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- it would retrieve the value of `b` and multiply it by `2`, but then wouldn't do anything with that result.
+Esta forma de declaración es muy útil o común, ya que no tendría nungún efecto en el correr del programa. Ya que buscaría  el valor de `b` lo multiplicaría por `2`, y luego no haría nada con el resultado.
 
-A more common expression statement is a *call expression* statement (see "Functions"), as the entire statement is the function call expression itself:
+Una expresión más común es llamada declaraciones de *expresiones de llamada* (mirar "Funciones"), ya que la declaración de la función se llama a ella misma:
 
 ```js
 alert( a );
