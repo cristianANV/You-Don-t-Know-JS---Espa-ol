@@ -111,51 +111,49 @@ Typing the preceding code into the console in Chrome should produce something li
 
 Go on, try it. The best way to learn programming is to start coding!
 
-### Output
+### Salida
 
-In the previous code snippet, we used `console.log(..)`. Briefly, let's look at what that line of code is all about.
+En el código anterior, usamos `console.log(..)`. Brevemente, miremos de que se trata esa línea de código.
 
-You may have guessed, but that's exactly how we print text (aka *output* to the user) in the developer console. There are two characteristics of that statement that we should explain.
+Usted pudo haberlo adivinado, pero es exactamente la forma en la que imprimimos texto (también conocido como *Salida* para el usuario) en la consola del desarrollador. Hay dos características de esto que debemos explicar. 
 
-First, the `log( b )` part is referred to as a function call (see "Functions"). What's happening is we're handing the `b` variable to that function, which asks it to take the value of `b` and print it to the console.
+Primero, la parte `log( b )` se refiere a un llamado funcional (ver "Funciones"). Lo que sucede es que estamos ingresando la variable `b` a la función, lo cual implica tomar el valor de `b` e imprimirlo en la consola.
 
-Second, the `console.` part is an object reference where the `log(..)` function is located. We cover objects and their properties in more detail in Chapter 2.
+Segundo, la parte `console` es una referencia al objeto dónde la función `log(..)` se encuentra. Se habla de objetos y sus propiedades con más detalle en el capítulo 2.
 
-Another way of creating output that you can see is to run an `alert(..)` statement. For example:
+Otra forma de producir salida es ejecutar la sentencia `alert(..)`. Por ejemplo:
 
 ```js
 alert( b );
 ```
+Si ejecuta esta sentencia, se dará cuenta que envés de imprimir salida en la consola, se mostrará una ventana con el contenido de la variable `b`. De cualquier manera, usar `console.log(..)` hace que el proceso de aprender a programar y ejecutar programas sea más sencillo que con el uso de `alert(..)`, porque se pueden imprimir muchos valores sin interrumpir la interfaz del navegador.
 
-If you run that, you'll notice that instead of printing the output to the console, it shows a popup "OK" box with the contents of the `b` variable. However, using `console.log(..)` is generally going to make learning about coding and running your programs in the console easier than using `alert(..)`, because you can output many values at once without interrupting the browser interface.
+En este libro, usaremos `conosole.log(..)` para la salida.
 
-For this book, we'll use `console.log(..)` for output.
+### Entrada
 
-### Input
+Mientras discutíamos la salida, usted puede estar preguntándose por la *entrada* (es decir, recibir información del usuario).
 
-While we're discussing output, you may also wonder about *input* (i.e., receiving information from the user).
+La manera más común de recibir información para una página en HTML es mostrar elementos de tipo formulario (como cajas de texto) al usuario de modo que pueda escribir, y luego usar JS para leer esos valores y guardarlos en variables del programa.
 
-The most common way that happens is for the HTML page to show form elements (like text boxes) to a user that they can type into, and then using JS to read those values into your program's variables.
-
-But there's an easier way to get input for simple learning and demonstration purposes such as what you'll be doing throughout this book. Use the `prompt(..)` function:
+Pero existe un modo más sencillo de obtener entrada del usuario, para efectos de aprendizaje y demostración como los que se harán a lo largo de este libro. Use la función `prompt(..)`:
 
 ```js
 age = prompt( "Please tell me your age:" );
 
 console.log( age );
 ```
+Como pudo haber adivinado, el mensaje que se entrega a la función `prompt(..)` -- en este caso, `"Please tell me your age:"` -- es impreso en una ventana.
 
-As you may have guessed, the message you pass to `prompt(..)` -- in this case, `"Please tell me your age:"` -- is printed into the popup.
-
-This should look similar to the following:
+Debería verse algo como lo siguiente:
 
 <img src="fig2.png" width="500">
 
-Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored in the `age` variable, which we then *output* with `console.log(..)`:
+Una vez se ingresa el texto al dar click en "OK", se observa que el valor que ingresó es guardado en la variable `age`, lo que puede verse cuando por *salida* usamos `console.log(..)`:
 
 <img src="fig3.png" width="500">
 
-To keep things simple while we're learning basic programming concepts, the examples in this book will not require input. But now that you've seen how to use `prompt(..)`, if you want to challenge yourself you can try to use input in your explorations of the examples.
+Para mantener las cosas simples mientras aprendemos conceptos básicos de programación, los ejemplos en este libro no requerirán entrada. Pero ahora que usted conoce el uso de `prompt(..)`, puede querer retarse a si mismo intentando usar esta función en futuros ejemplos.
 
 ## Operators
 
