@@ -85,17 +85,17 @@ It's typically asserted that JavaScript is *interpreted*, because your JavaScrip
 
 **Note:** For more information on JavaScript compiling, see the first two chapters of the *Scope & Closures* title of this series.
 
-## Try It Yourself
+## Inténtelo usted mismo
 
-This chapter is going to introduce each programming concept with simple snippets of code, all written in JavaScript (obviously!).
+Este capítulo introducirá cada concepto de programación con fragmentos de código simples, todos escritos en lenguaje JavaScript (¡Por supuesto!).
 
-It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the time to go over it several times -- you should practice each of these concepts by typing the code yourself. The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox, Chrome, IE, etc.).
+No se puede enfatizar lo suficiente: Mientras avanza en el capítulo -- Y podría necesitar tiempo para leérlo múltiples veces -- debe practicar cada uno de los conceptos escribiendo el código usted mismo. La manera más fácil de hacerlo es abrir la consola de la herramienta del desarrollador en el navegador de su preferencia (Firefox, Chrome, IE, etc.).
 
-**Tip:** Typically, you can launch the developer console with a keyboard shortcut or from a menu item. For more detailed information about launching and using the console in your favorite browser, see "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). To type multiple lines into the console at once, use `<shift> + <enter>` to move to the next new line. Once you hit `<enter>` by itself, the console will run everything you've just typed.
+**Consejo:** Típicamente, puede iniciar la consola del desarrollador con un atajo del teclado o de un ítem de menu. Para información más detallada acerca de iniciar y usar la consola de su navegador favorito, dirigirse a "Mastering The Developer Tools Console" (http://blog.teamtreehouse.com/mastering-developer-tools-console). Para ingresar múltiples lineas en la consola sin ejecutar el código, se puede usar la combinación de teclas `<shift> + <enter>` e ingresar un salto de línea en el código. Una vez presionada la tecla `<enter>` por si sola, la consola ejecutara todo el código que se hubiese ingresado.
 
-Let's get familiar with the process of running code in the console. First, I suggest opening up an empty tab in your browser. I prefer to do this by typing `about:blank` into the address bar. Then, make sure your developer console is open, as we just mentioned.
+Vamos a familiarizarnos con el proceso de ejecutar código en la consola. Primero que todo, le sugiero abrir una pestaña nueva en su navegador. Yo prefiero hacer esto escribiendo `about:blank` en la barra de direcciones. Luego, asegúrese de que su consola de desarrollador esté abierta, como mencionamos previamente.
 
-Now, type this code and see how it runs:
+Ahora, ingrese este código y observe como se ejecuta:
 
 ```js
 a = 21;
@@ -104,12 +104,11 @@ b = a * 2;
 
 console.log( b );
 ```
-
-Typing the preceding code into the console in Chrome should produce something like the following:
+Escribir el anterior código en la consola de Chrome debería mostrar algo como esto:
 
 <img src="fig1.png" width="500">
 
-Go on, try it. The best way to learn programming is to start coding!
+Adelante, inténtelo. ¡La mejor forma de aprender programación es escribiendo código!
 
 ### Output
 
