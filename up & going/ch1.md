@@ -446,13 +446,13 @@ We'll explain `if` statements in the next section, but as you can see, the `{ ..
 
 **Note:** Unlike most other statements like `console.log(amount);`, a block statement does not need a semicolon (`;`) to conclude it.
 
-## Conditionals
+## Condicionales
 
-"Do you want to add on the extra screen protectors to your purchase, for $9.99?" The helpful phone store employee has asked you to make a decision. And you may need to first consult the current *state* of your wallet or bank account to answer that question. But obviously, this is just a simple "yes or no" question.
+"¿Desea agregar un protector de pantalla a su compra por $9.99?" El solidario empleado de la tienda de teléfonos le ha pedido que tome una decisión. Usted podría necesitar consultar el *estado* de su billetera o cuenta bancaria para responder a esa pregunta. Pero obviamente, es una pregunta sencilla de "si o no".
 
-There are quite a few ways we can express *conditionals* (aka decisions) in our programs.
+Hay pocos modos con los que podemos expresar *condicionales* (también conocidos como decisiones) en nuestros programas.
 
-The most common one is the `if` statement. Essentially, you're saying, "*If* this condition is true, do the following...". For example:
+El más común es la sentencia `if`. Escencialmente, está diciendo, "*Si* esta condición es verdadera, haga lo siguiente...". Por ejemplo:
 
 ```js
 var bank_balance = 302.13;
@@ -462,10 +462,9 @@ if (amount < bank_balance) {
 	console.log( "I want to buy this phone!" );
 }
 ```
+La sentencia `if` requiere una expresión dentro del paréntesis `( )` que puede ser tratada como `true` o `false`. En este programa, tenemos la expresión `amount < bank_balance`, lo cual ciertamente evaluará a `true` o a `false` dependiendo de la cantidad en la variable `bank_balance`.
 
-The `if` statement requires an expression in between the parentheses `( )` that can be treated as either `true` or `false`. In this program, we provided the expression `amount < bank_balance`, which indeed will either evaluate to `true` or `false` depending on the amount in the `bank_balance` variable.
-
-You can even provide an alternative if the condition isn't true, called an `else` clause. Consider:
+Usted puede declarar una alternativa si la condición no es verdadera, con la sentencia `else`. Considere:
 
 ```js
 const ACCESSORY_PRICE = 9.99;
@@ -486,15 +485,16 @@ else {
 }
 ```
 
-Here, if `amount < bank_balance` is `true`, we'll print out `"I'll take the accessory!"` and add the `9.99` to our `amount` variable. Otherwise, the `else` clause says we'll just politely respond with `"No, thanks."` and leave `amount` unchanged.
+Acá, si `amount < bank_balance` es `true`, imprimirá `"I'll take the accessory!"` y añadirá `9.99` a la variable `amount`. De otra manera, la sentencia `else` dice que responderemos educadamente con un `"No, thanks."` y dejar `amount` sin cambiar.
 
-As we discussed in "Values & Types" earlier, values that aren't already of an expected type are often coerced to that type. The `if` statement expects a `boolean`, but if you pass it something that's not already `boolean`, coercion will occur.
+Tal y como se discutió en "Valores & Tipos" más temprano, los valores que no están listos de determinado tipo son coercidos a ese tipo. La sentencia `if` espera un `boolean`, pero si usted pasa algo que no lo sea, la coerción ocurrirá.
 
-JavaScript defines a list of specific values that are considered "falsy" because when coerced to a `boolean`, they become `false` -- these include values like `0` and `""`. Any other value not on the "falsy" list is automatically "truthy" -- when coerced to a `boolean` they become `true`. Truthy values include things like `99.99` and `"free"`. See "Truthy & Falsy" in Chapter 2 for more information.
+JavaScript define una lista específica de valores que son considerados "falsy" porque al ser coercidos a `boolean`, se vuelven `false` -- esto incluye valores como `0` y `""`.
+Cualquier otro valor que no esté en la lista, es automáticamente "truthy" -- cuando son coercidos a `boolean` se convierten en `true`. Los valores Truthy incluyen cosas como `99.99` y `"free"`. Vea "Truthy y Falsy" en el capítulo 2 para más información.
 
-*Conditionals* exist in other forms besides the `if`. For example, the `switch` statement can be used as a shorthand for a series of `if..else` statements (see Chapter 2). Loops (see "Loops") use a *conditional* to determine if the loop should keep going or stop.
+Los *condicionales* existen en formas más allá del `if`. Por ejemplo, la sentencia `switch` puede ser usada como un atajo para una serie de sentencias `if..else` (ver el capítulo 2).
 
-**Note:** For deeper information about the coercions that can occur implicitly in the test expressions of *conditionals*, see Chapter 4 of the *Types & Grammar* title of this series.
+**Nota:** Para mayor información sobre las coerciones que pueden ocurrir implícitamente en la evaluación de condicionales, vea el capítulo 4 de *Types & Grammar* libro de esta serie.
 
 ## Loops
 
