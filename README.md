@@ -41,7 +41,7 @@ Se deben llamar los branches con el siguiente formato:
  
   `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
 
-Luego de realizar los cambios necesario y considera que su traducción definitivamente se encuentra lista para revisión por favor renombrar su pull request como
+Si luego de realizar los cambios necesarios, considera que su traducción definitivamente se encuentra lista para revisión por favor renombrar su pull request como
   
   `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
 
