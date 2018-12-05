@@ -359,15 +359,15 @@ amount = "$" + String( amount );
 console.log( amount );		// "$199.98"
 ```
 
-La variable `cantidad` inicia guardando el número `99.99`, luego almacena el resultado de tipo `number` de `cantidad * 2`, lo cual es `199.98`.
+La variable `amount` inicia guardando el número `99.99`, luego almacena el resultado de tipo `number` de `amount * 2`, lo cual es `199.98`.
 
 La primera instrucción `consle.log(..)` tiene que hacer coerción *implícita* desde `number` a `string` para imprimirlo.
 
-Luego la sentencia `cantidad = "$" + String(cantidad)` realiza coerción *explícita* del valor `199.98` a `string` y añade el caracter `"$"` al inicio. Hasta este punto, `cantidad` alamacena el `string` con valor `"$199.98"`, entonces el segundo `console.log(..)` no necesita realizar ninguna coerción para imprimirlo.
+Luego la sentencia `amount = "$" + String(amount)` realiza coerción *explícita* del valor `199.98` a `string` y añade el caracter `"$"` al inicio. Hasta este punto, `amount` alamacena el `string` con valor `"$199.98"`, entonces el segundo `console.log(..)` no necesita realizar ninguna coerción para imprimirlo.
 
-Los desarrolladores JavaScript notarán la flexibilidad de usar la variable `cantidad` para cada uno de los valores `99.99`, `199.98`, y `"$199.98"`. Los entusiastas del tipado estático podrían preferir una variable separado como `cantidadStr` para guardar el resultado final `"$199.98"`, puesto que es de un tipo diferente.
+Los desarrolladores JavaScript notarán la flexibilidad de usar la variable `amount` para cada uno de los valores `99.99`, `199.98`, y `"$199.98"`. Los entusiastas del tipado estático podrían preferir una variable separado como `amountStr` para guardar el resultado final `"$199.98"`, puesto que es de un tipo diferente.
 
-De cualquier modo, se dará cuenta que `cantidad` almacena un valor que cambia con el curso del programa, mostrando el propósito primario de las variables: gestionar el *estado* del programa. 
+De cualquier modo, se dará cuenta que `amount` almacena un valor que cambia con el curso del programa, mostrando el propósito primario de las variables: gestionar el *estado* del programa. 
 
 En otras palabras, el *estado* es seguir los cambios a los valores a medida que el programa se ejecuta.
 
@@ -392,7 +392,7 @@ console.log( amount.toFixed( 2 ) );	// "215.98"
 
 **Nota:** De forma similar en que `console.log(..)` es una función dónde `log(..)` es accedido como una propiedad del valor `console`, `toFixed(..)` acá hay una función que puede ser accedida en valores de tipo `number`. Los `number` en JavaScript no son formateados de forma automática para indicar dólares -- El motor no sabe cuál es su intención y no existe un tipo para monedas. `toFixed(..)` nos permite especificar a cuántos decimales nos gustaría redondear un número, y producir el `string` cuando es necesario.
 
-La variable `TASA_DE_IMPUESTOS` es únicamente *constante* por convención -- No hay nada especial en este programa que prevenga a esta variable de ser cambiada. Pero si la ciudad aumenta el impuesto de ventas a 9%, podemos fácilmente actualizar el programa asignando a `TASA_DE_IMPUESTOS` el valor de `0.09` en un solo lugar, envés de encontrar todas las ocurrencias del valor `0.08`esparcido a lo largo del programa y actualizar todas ellas.
+La variable `TAX_RATE` es únicamente *constante* por convención -- No hay nada especial en este programa que prevenga a esta variable de ser cambiada. Pero si la ciudad aumenta el impuesto de ventas a 9%, podemos fácilmente actualizar el programa asignando a `TAX_RATE` el valor de `0.09` en un solo lugar, envés de encontrar todas las ocurrencias del valor `0.08`esparcido a lo largo del programa y actualizar todas ellas.
 
 La versión más reciente de JavaScript en el momento en que se escribio este libro (comúnmente llamada "ES6") incluye una nueva forma de declarar *constantes*, mediante el uso de `const` envés de `var`:
 
@@ -436,9 +436,9 @@ if (amount > 10) {			// <-- block attached to `if`
 	console.log( amount );	// 199.98
 }
 ```
-Explicaremos las sentencias `if` en la siguiente sección, pero como puede ver, el bloque `{ .. }` con las dos sentencias depende de `if (cantidad > 10)` ; las sentencias dentro del bloque serán ejecutadas si el condicional lo aprueba.
+Explicaremos las sentencias `if` en la siguiente sección, pero como puede ver, el bloque `{ .. }` con las dos sentencias depende de `if (amount > 10)` ; las sentencias dentro del bloque serán ejecutadas si el condicional lo aprueba.
 
-**Nota:** A diferencia de otras sentencias como `console.log(cantidad)`, una sentencia de bloque no necesita un punto y coma (`;`) para ser concluido.
+**Nota:** A diferencia de otras sentencias como `console.log(amount)`, una sentencia de bloque no necesita un punto y coma (`;`) para ser concluido.
 
 ## Condicionales
 
