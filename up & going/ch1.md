@@ -564,13 +564,13 @@ El ciclo `for` tiene tres cláusulas: La cláusula de inicialización (`var i=0`
 
 Hay otras formas especializadas de ciclos cuya intención es iterar sobre valores específicos, tales como las propiedades de un objeto (ver capítulo 2) dónde la evaluación del condicional se da cuando todas las propiedades han sido procesadas. El concepto de "ciclo hasta que una condición falle" permanece sin importar cual es la forma del ciclo.
 
-## Functions
+## Funciones
 
-The phone store employee probably doesn't carry around a calculator to figure out the taxes and final purchase amount. That's a task she needs to define once and reuse over and over again. Odds are, the company has a checkout register (computer, tablet, etc.) with those "functions" built in.
+El empleado de la tiendo probablemente no cargue con sigo una calculadora para encontrar el total de impuestos y el total de la compra. Es una tarea que necesita definir una vez y repetirla durante muchas veces. Hay chances de que la compañía cuente con una máquina registradora (computador, table, etc.) con estas "funciones" integradas.
 
-Similarly, your program will almost certainly want to break up the code's tasks into reusable pieces, instead of repeatedly repeating yourself repetitiously (pun intended!). The way to do this is to define a `function`.
+De manera similar, su programa seguramente divididirá las tareas del código en piezas reutilizables, envés de repetidamente repetirse a si mismo repetitivamente (¡juego de palabras!).
 
-A function is generally a named section of code that can be "called" by name, and the code inside it will be run each time. Consider:
+Una función por lo general es una sección de código con un nombre con el cual puede ser "llamada", y el código en su interior será ejecutado cada vez que se llame. Considere:
 
 ```js
 function printAmount() {
@@ -586,7 +586,7 @@ amount = amount * 2;
 printAmount(); // "199.98"
 ```
 
-Functions can optionally take arguments (aka parameters) -- values you pass in. And they can also optionally return a value back.
+Las funciones pueden tener argumentos de forma opcional (también conocidos como parámetros) --valores que se le pasan. Y también pueden opcionalmente devolver un valor.
 
 ```js
 function printAmount(amt) {
@@ -605,11 +605,11 @@ amount = formatAmount();
 console.log( amount );			// "$99.99"
 ```
 
-The function `printAmount(..)` takes a parameter that we call `amt`. The function `formatAmount()` returns a value. Of course, you can also combine those two techniques in the same function.
+La función `printAmount(..)` toma un parámetro que llamamos `amt`. La función `formatAmount()` devuelve un valor. Por supuesto, usted puede combinar estas dos técnicas dentro de la misma función.
 
-Functions are often used for code that you plan to call multiple times, but they can also be useful just to organize related bits of code into named collections, even if you only plan to call them once.
+Las funciones son usadas a menudo para código que se quiera llamar multiples veces, pero ellas pueden ser útiles simplemente para organizar bits de código dentro de colecciones con nombre, incluso si usted solo planea llamarlas una única vez.
 
-Consider:
+Considere:
 
 ```js
 const TAX_RATE = 0.08;
@@ -629,7 +629,7 @@ amount = calculateFinalPurchaseAmount( amount );
 console.log( amount.toFixed( 2 ) );		// "107.99"
 ```
 
-Although `calculateFinalPurchaseAmount(..)` is only called once, organizing its behavior into a separate named function makes the code that uses its logic (the `amount = calculateFinal...` statement) cleaner. If the function had more statements in it, the benefits would be even more pronounced.
+A pesar de que `calculateFinalPurchaseAmount(..)` es llamada una única vez, organizar esta rutina dentro de una función separada y con nombre hace el código que use su lógica (la sentencia `amount = calculateFinal...`) más limpia. Si la función tiene más sentencias dentro de ella, los beneficios son aún más pronunciados.
 
 ### Scope
 
