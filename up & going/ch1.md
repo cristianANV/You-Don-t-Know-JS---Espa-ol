@@ -291,11 +291,11 @@ En JavaScript, existen dos tipos de comentarios en el código: Comentarios de un
 Considere:
 
 ```js
-// Esto es un comentario de una sóla línea
+// This is a single-line comment
 
-/* Mientras que este
-       es un comentario
-             de varias líneas.
+/* But this is
+       a multiline
+             comment.
                       */
 ```
 
@@ -304,25 +304,24 @@ El comentario de una línea `//`, es apropiado si usted agregará un comentario 
 Considere:
 
 ```js
-var a = 42;		// 42 es el significado de la vida
+var a = 42;		// 42 is the meaning of life
 ```
 
-El comentario multilínea `/* .. */` es apropiado si usted tiene varias líneas que requieran explicación.
+The `/* .. */` multiline comment is appropriate if you have several lines worth of explanation to make in your comment.
 
-Acá se ve el uso común de comentarios multilínea:
+Here's a common usage of multiline comments:
 
 ```js
-/* 
-	El siguiente valor se usa porque
-	está demostrado que es la respuesta
-    a todas las preguntas en el universo. */
+/* The following value is used because
+   it has been shown that it answers
+   every question in the universe. */
 var a = 42;
 ```
 
 Este puede aparece en cualquier lugar de una líne, incluso en medio de una sentencia, porque `*/` lo termina. Por ejemplo: 
 
 ```js
-var a = /* valor arbitrario */ 42;
+var a = /* arbitrary value */ 42;
 
 console.log( a );	// 42
 ```
@@ -347,17 +346,17 @@ JavaScript usa el último enfoque, *tipado dinámico*, lo que significa que las 
 Como se mencionó antes, declararemos una variable usando la sentencia ``var` -- note que no hay información sobre el *tipo* en la declaración. Considere este ejemplo:
 
 ```js
-var cantidad = 99.99;
+var amount = 99.99;
 
-cantidad = cantidad * 2;
+amount = amount * 2;
 
-console.log( cantidad );		// 199.98
+console.log( amount );		// 199.98
 
-// Convertir `cantidad` a una cadena, y 
-// agregar el signo "$" al inicio
-cantidad = "$" + String( cantidad );
+// convert `amount` to a string, and
+// add "$" on the beginning
+amount = "$" + String( amount );
 
-console.log( cantidad );		// "$199.98"
+console.log( amount );		// "$199.98"
 ```
 
 La variable `cantidad` inicia guardando el número `99.99`, luego almacena el resultado de tipo `number` de `cantidad * 2`, lo cual es `199.98`.
@@ -379,16 +378,16 @@ Usted declara estas *constantes*, con frecuencia en la parte superior de un prog
 Acá hay un ejemplo sencillo:
 
 ```js
-var TASA_DE_IMPUESTOS = 0.08;	// 8% Impuesto de ventas
+var TAX_RATE = 0.08;	// 8% sales tax
 
-var cantidad = 99.99;
+var amount = 99.99;
 
-cantidad = cantidad * 2;
+amount = amount * 2;
 
-cantidad = cantidad + (cantidad * TASA_DE_IMPUESTOS);
+amount = amount + (amount * TAX_RATE);
 
-console.log( cantidad );				// 215.9784
-console.log( cantidad.toFixed( 2 ) );	// "215.98"
+console.log( amount );				// 215.9784
+console.log( amount.toFixed( 2 ) );	// "215.98"
 ```
 
 **Nota:** De forma similar en que `console.log(..)` es una función dónde `log(..)` es accedido como una propiedad del valor `console`, `toFixed(..)` acá hay una función que puede ser accedida en valores de tipo `number`. Los `number` en JavaScript no son formateados de forma automática para indicar dólares -- El motor no sabe cuál es su intención y no existe un tipo para monedas. `toFixed(..)` nos permite especificar a cuántos decimales nos gustaría redondear un número, y producir el `string` cuando es necesario.
@@ -398,10 +397,10 @@ La variable `TASA_DE_IMPUESTOS` es únicamente *constante* por convención -- No
 La versión más reciente de JavaScript en el momento en que se escribio este libro (comúnmente llamada "ES6") incluye una nueva forma de declarar *constantes*, mediante el uso de `const` envés de `var`:
 
 ```js
-// como con ES6:
-const TASA_DE_IMPUESTOS = 0.08;
+// as of ES6:
+const TAX_RATE = 0.08;
 
-var cantidad = 99.99;
+var amount = 99.99;
 
 // ..
 ```
@@ -418,23 +417,23 @@ El empleado de la tienda de teléfonos puede atravesar una serie de pasos para c
 De manera similar, en código es frecuentemente necesario agrupar sentencias, llamadas frecuentemente bloques. En JavaScript, un bloque es definido rodeando una o más sentencias con una pareja de corchetes `{ .. }`. Considere:
 
 ```js
-var cantidad = 99.99;
+var amount = 99.99;
 
-// Un bloque general
+// a general block
 {
-	cantidad = cantidad * 2;
-	console.log( cantidad );	// 199.98
+	amount = amount * 2;
+	console.log( amount );	// 199.98
 }
 ```
 Esta particularidad `{ .. }` es un bloque general válido, pero no es como se ve realmente en los programas JS. Típicamente, bloques son añadidos a otras sentencias de control, como  la sentencia `if` (ver "Condicionales") o un ciclo (ver "Ciclos"). Por ejemplo: 
 
 ```js
-var cantidad = 99.99;
+var amount = 99.99;
 
-// Es cantidad lo suficientemente grande?
-if (cantidad > 10) {			// <-- Bloque que depende de un `if`
-	cantidad = cantidad * 2;
-	console.log( cantidad );	// 199.98
+// is amount big enough?
+if (amount > 10) {			// <-- block attached to `if`
+	amount = amount * 2;
+	console.log( amount );	// 199.98
 }
 ```
 Explicaremos las sentencias `if` en la siguiente sección, pero como puede ver, el bloque `{ .. }` con las dos sentencias depende de `if (cantidad > 10)` ; las sentencias dentro del bloque serán ejecutadas si el condicional lo aprueba.
