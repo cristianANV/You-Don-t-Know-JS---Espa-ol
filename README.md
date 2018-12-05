@@ -1,10 +1,10 @@
-# Nota para los contribuyentes en Español:
+# Nota para los colaboradores en Español:
 
 Aunque este es un repo personal, hace parte del repo de `Staging`, proceso previo para hacer merge a el repo original. Esta decisión se tomó conjuntamente con @getify para reducir el ruido en el repo master, [siga conversación acá](https://github.com/getify/You-Dont-Know-JS/pull/1378).
 
-Sin embargo, todas contribuciones habrá un `Contributors` pages en Espanõl.
+Sin embargo, para todas las contribuciones habrá un `Contributors` pages en Español.
 
-# ¿Cómo hacer un PR?
+# ¿Cómo empezar a ser un colaborador?
 
 1. Fork este proyecto y clonar su propio repositorio.
 2. Hacer un branch nuevo `git checkout -b pr/branch-name`
@@ -19,24 +19,29 @@ Sin embargo, todas contribuciones habrá un `Contributors` pages en Espanõl.
 > ```
 >
 > Esto agregará el repositorio original como "remote" y lo llama "upstream". Luego
-> hará un "Fetch" del git y toda la info que esté remota, haciendo que se `master`
-> local cuando se haga un `git pull` tome toda la información del repo remoto.
+> hará un "Fetch" del git y toda la info que esté remota, haciendo que su rama `master`
+> local cuando se haga un `git pull` tome toda la información del repositorio remoto.
 > Luego puede sacar todos los branches del `master` actualizado.
-> De tal manera que siempre recomendamos actualizar `master` siempre.`git pull`
+> De tal manera que siempre recomendamos actualizar su rama `master`.`git pull`
 
-## PR al momento de iniciar una traducción
+## Pull Request antes de iniciar una traducción
 
-`Por favor hacer un PR antes de comenzar una traducción` Esto es un statement a la comunidad de que la persona va a hacer esa traducción y evitar hacer un PR cuando se termina y darse cuenta tarde de que ya alguién trabajó en eso.
+`Por favor hacer un PR antes de comenzar una traducción` Esto es un indicador para la comunidad de que usted va a trabajar en una traducción y evitar que cuando usted termine se de cuenta de que ya alguién trabajó en eso antes.
 
-La unidad mínima de traducción es en Markdown un bloque de `###` ó `##`, se deben llamar los branches con el siguiente formato: `pr/nombre_de_capitulo/#titulo/##subtema/###subtema`.
-la filosofía de trabajo es: traducir el archivo, y todo trabajo pendiente se deja en inglés, para que sea claro para los colaboradores lo que hace falta por traducir.
+La unidad mínima de traducción es en Markdown un bloque de `###` ó `##`.
+
+`Sobre el nombre de su(s) branch(es): ` Se deben llamar los branches con el siguiente formato: `pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
+
+`Sobre el nombre de su pull request: ` Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request de la siguiente forma `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. Si su traducción definitivamente se encuentra lista para revisión renombrar su pull request como `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema`.
+
+La filosofía de trabajo es: traducir el archivo, y todo trabajo pendiente se deja en inglés, para que sea claro para los colaboradores lo que hace falta por traducir.
 
 Para este proceso se debe tener en cuenta la seccion que se tradujo con los siguientes parametros:
 
 1. Revisar si el branch ya se encuntre de manera remota para evitar multiples ramas con nombres iguales `git branch -r`. Si el branch existe y falta terminar la traducción o desea corregirlo, hacer el pull correspondiente al branch a editar `git pull origin pr/../..`
-2. Si el branch no existe, al crearlo, el nombre debe seguir la siguiente estructura teniendo en cuenta los títulos que se representan con el signo numeral (#) en el .md. Con base en lo anterior, se espera lo siguiente: `pr/nombre_de_capitulo/#titulo/##subtema/###subtema`.
-3. Realizar el debido push al repositorio de su cuenta. Si ya su traducción se encuentra lista para revisión, hacer el PR para que el revisor quede notificado.
-4. Si ya ha hecho varios commits y piensa subir su versión final, hacer un rebase interactivo en su local a master y dejar un solo commit con el mismo nombre del branch.
+2. Si el branch no existe, al crearlo, el nombre debe seguir la siguiente estructura teniendo en cuenta los títulos que se representan con el signo numeral (#) en el .md. Con base en lo anterior, se espera lo siguiente: `pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
+3. Realizar el debido push al repositorio de su cuenta. Si ya su traducción definitivamente se encuentra lista para revisión, renombrar  el PR como `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` para que el revisor quede notificado.
+4. Si ya ha hecho varios commits y piensa subir su versión final, por favor hacer un rebase interactivo en su local a master y dejar un solo commit con el mismo nombre del branch. Para mayor información sobre como realizar esto, visite este [enlace](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
 ## Parametros a tener en cuenta en el momento de la traducción
 
