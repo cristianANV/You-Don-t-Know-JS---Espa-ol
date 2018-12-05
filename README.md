@@ -32,7 +32,14 @@ La unidad mínima de traducción es en Markdown un bloque de `###` ó `##`.
 
 `Sobre el nombre de su(s) branch(es): ` Se deben llamar los branches con el siguiente formato: `pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
 
-`Sobre el nombre de su pull request: ` Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request de la siguiente forma `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. Si su traducción definitivamente se encuentra lista para revisión renombrar su pull request como `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema`.
+`Sobre el nombre de su pull request: `
+ Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request de la siguiente forma
+ 
+  `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
+
+Si su traducción definitivamente se encuentra lista para revisión renombrar su pull request como 
+
+`[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema`.
 
 La filosofía de trabajo es: traducir el archivo, y todo trabajo pendiente se deja en inglés, para que sea claro para los colaboradores lo que hace falta por traducir.
 

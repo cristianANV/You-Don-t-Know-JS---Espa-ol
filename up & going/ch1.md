@@ -404,7 +404,7 @@ var amount = 99.99;
 
 // ..
 ```
-Las constantes son útiles como variables con valores sin cambiar, excepto que las constantes previenen el cambio accidental de algún valor dónde sea que se haga después de la asignación inicial. Si usted intentó asignar algún valor distinto a `TASA_DE_IMPUESTOS` luego de su primera declaración, su programa podría rechazar el cambio (Y en modo estricto, fallar con un error --ver "Modo Estricto" en el capítulo 2).
+Las constantes son útiles como variables con valores sin cambiar, excepto que las constantes previenen el cambio accidental de algún valor dónde sea que se haga después de la asignación inicial. Si usted intentó asignar algún valor distinto a `TAX_RATE` luego de su primera declaración, su programa podría rechazar el cambio (Y en modo estricto, fallar con un error --ver "Modo Estricto" en el capítulo 2).
 
 ¡Por cierto, ese tipo de "protección" contra errores es similar al enforzamiento del tipado estático, así que puede ver porqué los tipos estáticos pueden ser tan atractivos!
 
