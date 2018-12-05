@@ -491,15 +491,15 @@ Los *condicionales* existen en formas más allá del `if`. Por ejemplo, la sente
 
 **Nota:** Para mayor información sobre las coerciones que pueden ocurrir implícitamente en la evaluación de condicionales, vea el capítulo 4 de *Types & Grammar* libro de esta serie.
 
-## Loops
+## Ciclos
 
-During busy times, there's a waiting list for customers who need to speak to the phone store employee. While there's still people on that list, she just needs to keep serving the next customer.
+Durante tiempos ocupados, hay una lista de espera para clientes que quieren hablar con el empleado de la tienda de teléfonos. Mientras hay personas en la lista de espera, el necesita atender al siguiente cliente.
 
-Repeating a set of actions until a certain condition fails -- in other words, repeating only while the condition holds -- is the job of programming loops; loops can take different forms, but they all satisfy this basic behavior.
+Repetir un conjunto de acciones hasta que cierta condición falle -- en otras palabras, repetir solo mientras la condición se cumpla -- es el trabajo de los ciclos en programación; los ciclos pueden tener formas distintas, pero todos satisfacen este comportamiento básico.
 
-A loop includes the test condition as well as a block (typically as `{ .. }`). Each time the loop block executes, that's called an *iteration*.
+Un ciclo incluye evaluar la condición así como el bloque (típicamente presentado como `{ .. }`) cada vez que el ciclo se ejecuta, lo cual es llamado *iteración*.
 
-For example, the `while` loop and the `do..while` loop forms illustrate the concept of repeating a block of statements until a condition no longer evaluates to `true`:
+Por ejemplo, el ciclo `while` y el ciclo `do..while` ilustran el concepto de repetir un bloque de sentencias hasta que una condición deje de ser ``true`:
 
 ```js
 while (numOfCustomers > 0) {
@@ -520,20 +520,19 @@ do {
 	numOfCustomers = numOfCustomers - 1;
 } while (numOfCustomers > 0);
 ```
+La única diferencia práctica entre estos ciclos es la evaluación del condicional en la primera iteración (`while`) o después de la primera iteración(`do..while`).
 
-The only practical difference between these loops is whether the conditional is tested before the first iteration (`while`) or after the first iteration (`do..while`).
+De cualquier forma, si el condicional resulta evaluado como `falso`, la siguiente iteración no se ejecutará. Esto significa que si la condición es inicialmente `false`, un ciclo `while` no se ejecutará nunca, pero en el ciclo `do..while` será ejecutado solo la primera vez.
 
-In either form, if the conditional tests as `false`, the next iteration will not run. That means if the condition is initially `false`, a `while` loop will never run, but a `do..while` loop will run just the first time.
+Aveces usted itera con el propósito de contar un cierto conjunto de números, como desde `0` hasta `9` (diez números). Usted puede hacerlo definiendo una variable de iteración como `i` en el valor `0` e incrementarla en `1` por cada iteración.
 
-Sometimes you are looping for the intended purpose of counting a certain set of numbers, like from `0` to `9` (ten numbers). You can do that by setting a loop iteration variable like `i` at value `0` and incrementing it by `1` each iteration.
+**Advertencia:** Debido a una variedad de razones históricas, los lenguajes de programación casi siempre cuentan elementos empezando en cero, lo que significa que se inicia en `0` y no en `1`. Si no está familiarizado con este modo de pensar, puede ser confuso en un inicio. ¡Tome cierto tiempo para practicar el contar desde `0` para que se sienta más cómodo con eso!
 
-**Warning:** For a variety of historical reasons, programming languages almost always count things in a zero-based fashion, meaning starting with `0` instead of `1`. If you're not familiar with that mode of thinking, it can be quite confusing at first. Take some time to practice counting starting with `0` to become more comfortable with it!
+El condicional es evaluado en cada iteración, tanto como si hubiese una sentencia `if` dentro del ciclo.
 
-The conditional is tested on each iteration, much as if there is an implied `if` statement inside the loop.
+Podemos usar la sentencia `break` en JavaScript para detener un ciclo. También, podemos observar que es horriblemente fácil crear un ciclo que podría ejcutarse por siempre sin un mecanismo de `break`.
 
-We can use JavaScript's `break` statement to stop a loop. Also, we can observe that it's awfully easy to create a loop that would otherwise run forever without a `break`ing mechanism.
-
-Let's illustrate:
+Vamos a verlo:
 
 ```js
 var i = 0;
@@ -550,10 +549,9 @@ while (true) {
 }
 // 0 1 2 3 4 5 6 7 8 9
 ```
+**Advertencia:** Esto no es necesariamente una forma práctica en la que usted querría usar los ciclos. Se presenta acá únicamente con fines ilustrativos.
 
-**Warning:** This is not necessarily a practical form you'd want to use for your loops. It's presented here for illustration purposes only.
-
-While a `while` (or `do..while`) can accomplish the task manually, there's another syntactic form called a `for` loop for just that purpose:
+Mientras un ciclo `while` (o `do..while`) puede completar la tarea manualmente, hay otra forma sintáctica llamada `for` para este propósito:
 
 ```js
 for (var i = 0; i <= 9; i = i + 1) {
@@ -561,12 +559,11 @@ for (var i = 0; i <= 9; i = i + 1) {
 }
 // 0 1 2 3 4 5 6 7 8 9
 ```
+Como puede ver, en ambos casos en condicional `i <= 9` es `true` para las diez primeras iteraciones (`i` desde el valor `0` hasta el `9`) ya sea la forma del ciclo, pero se convierte en `false` una vez `i` tiene el valor de `10`.
 
-As you can see, in both cases the conditional `i <= 9` is `true` for the first 10 iterations (`i` of values `0` through `9`) of either loop form, but becomes `false` once `i` is value `10`.
+El ciclo `for` tiene tres cláusulas: La cláusula de inicialización (`var i=0`), la cláusula de evaluación (`i <= 9`), y la cláusula de actualización (`i = i + 1`). Así si usted va a contar sus iteraciones de ciclo, `for` es una forma más compacta y simple de entenderlo y escribirlo.
 
-The `for` loop has three clauses: the initialization clause (`var i=0`), the conditional test clause (`i <= 9`), and the update clause (`i = i + 1`). So if you're going to do counting with your loop iterations, `for` is a more compact and often easier form to understand and write.
-
-There are other specialized loop forms that are intended to iterate over specific values, such as the properties of an object (see Chapter 2) where the implied conditional test is just whether all the properties have been processed. The "loop until a condition fails" concept holds no matter what the form of the loop.
+Hay otras formas especializadas de ciclos cuya intención es iterar sobre valores específicos, tales como las propiedades de un objeto (ver capítulo 2) dónde la evaluación del condicional se da cuando todas las propiedades han sido procesadas. El concepto de "ciclo hasta que una condición falle" permanece sin importar cual es la forma del ciclo.
 
 ## Functions
 
