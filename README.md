@@ -59,9 +59,9 @@ Para este proceso se debe tener en cuenta la seccion que se tradujo con los sigu
 3. Realizar el debido push al repositorio de su cuenta. Si ya su traducción definitivamente se encuentra lista para revisión, renombrar  el PR como `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` para que el revisor quede notificado.
 4. Si ya ha hecho varios commits y piensa subir su versión final, por favor hacer un rebase interactivo en su local a master y dejar un solo commit con el mismo nombre del branch. Para mayor información sobre como realizar esto, visite este [enlace](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
-### Aclaración
+### Aclaraciones finales sobre la traducción
 
-Esta es una traducción hecha por contribuidores por lo que su interpretacion puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anecdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demas textos en tercera persona.
+Esta es una traducción hecha por contribuidores por lo que su interpretacion puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anecdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demas textos en tercera persona. El autor se refiere constantemente al lector con la palabra "you", por lo cual debemos referirnos al lector como "usted" para mantener el nivel de formalismo del los libros originales.
 
 # El order de traduccíon será el siguiente
 
