@@ -1,7 +1,7 @@
 
 # ¿Qué es You-Dont-Know-JS-ES/Traduccion ?
 
-Es un repositorio que almacena la éxitosa serie de libros de JavaScript "You Don't Know JS" de Kyle Simpson en versión original, con la intención de que estos sean traducidos al idioma español.
+Es un repositorio que almacena la éxitosa serie de libros de JavaScript "You Don't Know JS" de Kyle Simpson un fork del repositorio original, con la intención de que estos sean traducidos al idioma español.
 
 Aunque este es un repo personal, hace parte del repo de `Staging`, proceso previo para hacer merge a el repo original. Esta decisión se tomó conjuntamente con @getify para reducir el ruido en el repo master, [siga conversación acá](https://github.com/getify/You-Dont-Know-JS/pull/1378).
 
