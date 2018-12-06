@@ -5,7 +5,7 @@ Es un repositorio que almacena la éxitosa serie de libros de JavaScript "You Do
 
 Aunque este es un repo personal, hace parte del repo de `Staging`, proceso previo para hacer merge a el repo original. Esta decisión se tomó conjuntamente con @getify para reducir el ruido en el repo master, [siga conversación acá](https://github.com/getify/You-Dont-Know-JS/pull/1378).
 
-Sin embargo, para todas las contribuciones habrá un `Contributors` pages en Español.
+Sin embargo, para todas las contribuciones habrá un `Contributors` pages en Español. Siéntase libre de empezar a traducir secciones que aún no hayan sido traducidas, ya sea que conozca o no el lenguaje es un excelente ejercicio para aprender y entender detalles sobre JavaScript que quizás no se haya imaginado antes.
 
 # ¿Cómo empezar a ser un colaborador?
 
