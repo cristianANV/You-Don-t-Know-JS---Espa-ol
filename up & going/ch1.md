@@ -702,24 +702,24 @@ The `TAX_RATE` constant (variable) is accessible from inside the `calculateFinal
 
 **Note:** For more information about lexical scope, see the first three chapters of the *Scope & Closures* title of this series.
 
-## Practice
+## Práctica
 
-There is absolutely no substitute for practice in learning programming. No amount of articulate writing on my part is alone going to make you a programmer.
+No existe un substituto para la práctica cuando de aprender a programar se trata. Ninguna cantidad de escritura articulada de mi parte únicamente lo hará un mejor programador.
 
-With that in mind, let's try practicing some of the concepts we learned here in this chapter. I'll give the "requirements," and you try it first. Then consult the code listing below to see how I approached it.
+Con esto en mente, vamos a intentar practicar algunos de los conceptos que aprendimos en este capítulo, Le daré los "requisitos" y usted lo intentará inicialmente. Luego consultará el código listado acá para que observe como lo abordé.
 
-* Write a program to calculate the total price of your phone purchase. You will keep purchasing phones (hint: loop!) until you run out of money in your bank account. You'll also buy accessories for each phone as long as your purchase amount is below your mental spending threshold.
-* After you've calculated your purchase amount, add in the tax, then print out the calculated purchase amount, properly formatted.
-* Finally, check the amount against your bank account balance to see if you can afford it or not.
-* You should set up some constants for the "tax rate," "phone price," "accessory price," and "spending threshold," as well as a variable for your "bank account balance.""
-* You should define functions for calculating the tax and for formatting the price with a "$" and rounding to two decimal places.
-* **Bonus Challenge:** Try to incorporate input into this program, perhaps with the `prompt(..)` covered in "Input" earlier. You may prompt the user for their bank account balance, for example. Have fun and be creative!
+* Escriba un programa que calcule el precio total de su compra de teléfono. Usted se mantendrá comprando teléfonos (Pista: ¡Ciclo!) hasta que usted se quede sin dinero en su cuenta bancaria. Usted también comprará accesorios para cada teléfono siempre y cuando el monto de su compra esté por debajo de su umbral de gasto.
+* Luego de que usted haya calculado la cantidad de compra, agregue el impuesto, e imprima la cantidad de compra calculada, debidamente formateada.
+* Finalmente, compare la cantidad versus el balance de su cuenta bancaria para ver si puede comprarlo o no.
+* Usted deberá declarar algunas constantes para las variables "tax rate," "phone price," "accessory price," and "spending threshold," así como una variable para su "bank account balance."
+* Usted deberá definir funciones que calculen el impuesto y formateen el precio con un "$" y redondee el  valor con dos cifras decimales.
+* **Desafío extra:** Intente utilizar entradas dentro de su programa, tal vez con  `prompt(..)` visto en "Entradas" antes. Usted podría avisar al usuario sobre el balance de su cuenta bancaria, por ejemplo. ¡Diviértase y sea creativo!
 
-OK, go ahead. Try it. Don't peek at my code listing until you've given it a shot yourself!
+Esta bien, adelante. Inténtelo. ¡No mire mi lista de código hasta que usted haya hecho el intento usted mismo!
 
-**Note:** Because this is a JavaScript book, I'm obviously going to solve the practice exercise in JavaScript. But you can do it in another language for now if you feel more comfortable.
+**Nota:** Dado que este es un libro de JavaScript, obviamente resolveré el ejercicio práctico con JavaScript. Pero usted podría resolverlo en otro lenguaje por ahora si se siente más cómodo con ello.
 
-Here's my JavaScript solution for this exercise:
+Aca está mi solución en JavaScript para este ejercicio:
 
 ```js
 const SPENDING_THRESHOLD = 200;
@@ -765,10 +765,9 @@ if (amount > bank_balance) {
 }
 // You can't afford this purchase. :(
 ```
+**Nota:** La forma más sencilla de ejecutar este programa de JavaScript es escribirlo en la consola del desarrollador del navegador de su preferencia.
 
-**Note:** The simplest way to run this JavaScript program is to type it into the developer console of your nearest browser.
-
-How did you do? It wouldn't hurt to try it again now that you've seen my code. And play around with changing some of the constants to see how the program runs with different values.
+¿Cómo lo hizo? No sería dañino el intentarlo de nuevo ahora que ha visto mi código, Y puede jugar cambiando algunas de las constantes para ver como el programa se ejecuta con valores diferentes.
 
 ## Revisión
 
