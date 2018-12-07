@@ -706,12 +706,12 @@ The `TAX_RATE` constant (variable) is accessible from inside the `calculateFinal
 
 No existe un substituto para la práctica cuando de aprender a programar se trata. Ninguna cantidad de escritura articulada de mi parte únicamente lo hará un mejor programador.
 
-Con esto en mente, vamos a intentar practicar algunos de los conceptos que aprendimos en este capítulo, Le daré los "requisitos" y usted lo intentará inicialmente. Luego consultará el código listado acá para que observe como lo abordé.
+Con esto en mente, vamos a intentar practicar algunos de los conceptos que aprendimos en este capítulo. Le daré los "requisitos" y usted lo intentará inicialmente. Luego consultará el código listado acá para que observe como lo abordé.
 
 * Escriba un programa que calcule el precio total de su compra de teléfono. Usted se mantendrá comprando teléfonos (Pista: ¡Ciclo!) hasta que usted se quede sin dinero en su cuenta bancaria. Usted también comprará accesorios para cada teléfono siempre y cuando el monto de su compra esté por debajo de su umbral de gasto.
 * Luego de que usted haya calculado la cantidad de compra, agregue el impuesto, e imprima la cantidad de compra calculada, debidamente formateada.
 * Finalmente, compare la cantidad versus el balance de su cuenta bancaria para ver si puede comprarlo o no.
-* Usted deberá declarar algunas constantes para las variables "tax rate," "phone price," "accessory price," and "spending threshold," así como una variable para su "bank account balance."
+* Usted deberá declarar algunas constantes para las variables "tax rate," "phone price," "accessory price," y "spending threshold," así como una variable para su "bank account balance".
 * Usted deberá definir funciones que calculen el impuesto y formateen el precio con un "$" y redondee el  valor con dos cifras decimales.
 * **Desafío extra:** Intente utilizar entradas dentro de su programa, tal vez con  `prompt(..)` visto en "Entradas" antes. Usted podría avisar al usuario sobre el balance de su cuenta bancaria, por ejemplo. ¡Diviértase y sea creativo!
 
