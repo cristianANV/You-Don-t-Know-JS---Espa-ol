@@ -566,9 +566,9 @@ Hay otras formas especializadas de ciclos cuya intención es iterar sobre valore
 
 ## Funciones
 
-El empleado de la tiendo probablemente no cargue con sigo una calculadora para encontrar el total de impuestos y el total de la compra. Es una tarea que necesita definir una vez y repetirla durante muchas veces. Hay chances de que la compañía cuente con una máquina registradora (computador, table, etc.) con estas "funciones" integradas.
+El empleado de la tienda probablemente no cargue consigo una calculadora para encontrar el total de impuestos y el total de la compra. Es una tarea que necesita definir una vez y repetirla durante muchas veces. Hay chances de que la compañía cuente con una máquina registradora (computador, tablet, etc.) con estas "funciones" integradas.
 
-De manera similar, su programa seguramente divididirá las tareas del código en piezas reutilizables, envés de repetidamente repetirse a si mismo repetitivamente (¡juego de palabras!).
+De manera similar, su programa seguramente dividirá las tareas del código en piezas reutilizables, envés de repetidamente repetirse a si mismo repetitivamente (¡juego de palabras!). La manera de hacer esto es definiendo una función.
 
 Una función por lo general es una sección de código con un nombre con el cual puede ser "llamada", y el código en su interior será ejecutado cada vez que se llame. Considere:
 
@@ -629,7 +629,7 @@ amount = calculateFinalPurchaseAmount( amount );
 console.log( amount.toFixed( 2 ) );		// "107.99"
 ```
 
-A pesar de que `calculateFinalPurchaseAmount(..)` es llamada una única vez, organizar esta rutina dentro de una función separada y con nombre hace el código que use su lógica (la sentencia `amount = calculateFinal...`) más limpia. Si la función tiene más sentencias dentro de ella, los beneficios son aún más pronunciados.
+A pesar de que `calculateFinalPurchaseAmount(..)` es llamada una única vez, organizar esta rutina dentro de una función separada y con nombre hace el código que use su lógica (la sentencia `amount = calculateFinal...`) sea más limpio. Si la función tiene más sentencias dentro de ella, los beneficios son aún más pronunciados.
 
 ### Scope
 
