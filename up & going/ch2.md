@@ -1,11 +1,7 @@
 # You Don't Know JS: Up & Going
 # Chapter 2: Into JavaScript
 
-En el capítulo anterior, introduje los bloques básicos de la programación, como las variables, los ciclos, los condicionales y las funciones. Por supuesto, todo el código mostrado fue en Javascript. Pero en este capítulo, nos enfocaremos específicamente en cosas que usted necesita saber acerca de Javascript para iniciarte como desarrollador JS.
-
 In the previous chapter, I introduced the basic building blocks of programming, such as variables, loops, conditionals, and functions. Of course, all the code shown has been in JavaScript. But in this chapter, we want to focus specifically on things you need to know about JavaScript to get up and going as a JS developer.
-
-Introduciremos una serie de conceptos en este capítulo que no seran totalmente explorados hasta los libros siguientes de esta serie. Usted puede pensar este capitulo como una vision general de topicos que seran cubiertos en detalle mas adelante.
 
 We will introduce quite a few concepts in this chapter that will not be fully explored until subsequent *YDKJS* books. You can think of this chapter as an overview of the topics covered in detail throughout the rest of this series.
 
