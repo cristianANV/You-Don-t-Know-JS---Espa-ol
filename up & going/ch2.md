@@ -103,9 +103,9 @@ obj["b"];		// 42
 
 There are a couple of other value types that you will commonly interact with in JavaScript programs: *array* and *function*. But rather than being proper built-in types, these should be thought of more like subtypes -- specialized versions of the `object` type.
 
-#### Arrays
+#### Arreglos
 
-An array is an `object` that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions. For example:
+Un arreglo es un `object` que almacena valores (De cualquier tipo) en propiedades/llaves nombradas, pero preferiblemente en posiciones indexadas numéricamente. Por ejemplo: 
 
 ```js
 var arr = [
@@ -122,17 +122,17 @@ arr.length;		// 3
 typeof arr;		// "object"
 ```
 
-**Note:** Languages that start counting at zero, like JS does, use `0` as the index of the first element in the array.
+**Nota:** Los lenguajes que inician contando desde cero, como JS, usan `0` como el índice del primer elemento del arreglo.
 
-It may be helpful to think of `arr` visually:
+Puede ser de ayuda pensar en `arr` visualmente:
 
 <img src="fig5.png">
 
-Because arrays are special objects (as `typeof` implies), they can also have properties, including the automatically updated `length` property.
+Dado que los arreglos son objetos especiales (como `typeof` implica), estos tienen también propiedades, incluyendo la actualización automática de la propiedad `length`.
 
-You theoretically could use an array as a normal object with your own named properties, or you could use an `object` but only give it numeric properties (`0`, `1`, etc.) similar to an array. However, this would generally be considered improper usage of the respective types.
+Usted puede teóricamente usar un arreglo como un objeto normal con propiedades nombradas por usted, o usted podría usar un `object` y asignarle únicamente propiedades numéricas (`0`, `1`, etc.) de forma similar a un arreglo. De cualquier modo, esto puede ser considerado como un uso inapropiado de los tipos respectivos.
 
-The best and most natural approach is to use arrays for numerically positioned values and use `object`s for named properties.
+El mejor enfoque y el más natural es usar arreglos para valores posicionados numéricamente y usar `object`s para propiedades con nombre.
 
 #### Functions
 
