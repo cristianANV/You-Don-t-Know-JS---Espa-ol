@@ -1,0 +1,19 @@
+{
+  "name": "traduccion",
+  "version": "1.0.0",
+  "description": "Es un repositorio que almacena la éxitosa serie de libros de JavaScript \"You Don't Know JS\" de Kyle Simpson un fork del repositorio original, con la intención de que estos sean traducidos al idioma español.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/You-Dont-Know-JS-ES/Traduccion.git"
+  },
+  "author": "Esteban Marin <estebanmarin002@gmail.com> (http://estebanmarin.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/You-Dont-Know-JS-ES/Traduccion/issues"
+  },
+  "homepage": "https://github.com/You-Dont-Know-JS-ES/Traduccion#readme"
+}
