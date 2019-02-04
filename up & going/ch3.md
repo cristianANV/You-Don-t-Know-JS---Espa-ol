@@ -1,13 +1,13 @@
-# You Don't Know JS: Up & Going
-# Chapter 3: Into YDKJS
+# Usted no sabe JS: En marcha
+# Chapter 3: Dentro de YDKJS
 
-What is this series all about? Put simply, it's about taking seriously the task of learning *all parts of JavaScript*, not just some subset of the language that someone called "the good parts," and not just whatever minimal amount you need to get your job done at work.
+¿De que se tratan todo este libro? Coloquemoslo simple, es sobre tomar seriamente la tarea de aprender *todas las partes de Javascript*, no sólo las partes del subconjunto del lenguaje que algunos llaman "las partes buenas," y no sólo la mínima cantidad que usted necesita para realizar bien sus tareas en el trabajo.
 
-Serious developers in other languages expect to put in the effort to learn most or all of the language(s) they primarily write in, but JS developers seem to stand out from the crowd in the sense of typically not learning very much of the language. This is not a good thing, and it's not something we should continue to allow to be the norm.
+Serios desarrolladores en otros lenguajes esperan colocar todo el esfuerzo para aprender la mayor (o todo) sobre los lenguajes (o el lenguaje) con los que ellos escriben principalmente, pero los desarrolladores de JS parece que estan fuera de la multitud en el sentido de que ellos ni suelen aprender muchas cosas sobre el lenguaje. Esto no es una buena cosa, y no es algo que debamos continuar permitiendo que sea la norma.
 
-The *You Don't Know JS* (*YDKJS*) series stands in stark contrast to the typical approaches to learning JS, and is unlike almost any other JS books you will read. It challenges you to go beyond your comfort zone and to ask the deeper "why" questions for every single behavior you encounter. Are you up for that challenge?
+La serie de libros "Usted no sabe JS" (*UNSJS*) o en inglés *You Don't Know JS* (*YDKJS*) se encuentra en el marcado contraste de los típicos enfoques de aprender JS, y es diferente a casí cualquier otro libro sobre JS que usted va a leer. Aquí lo desafía a ir más allá de su zona de confort y realizarse a sí mismo preguntas como "¿porque?" para cada simple comportamiento que usted encuentre. ¿Está listo para ese desafío?.
 
-I'm going to use this final chapter to briefly summarize what to expect from the rest of the books in the series, and how to most effectively go about building a foundation of JS learning on top of *YDKJS*.
+Voy a usar este capítulo final para resumir brevemente que es lo que espero del resto de la serie de libros, y cómo ir de la manera más efectiva para construir una base de aprendizaje en JS sobre *YDKJS*.
 
 ## Scope & Closures
 
