@@ -41,7 +41,7 @@ En lo posible, recomendamos nombrar los branches con el siguiente formato:
 
 ### Sobre el nombre de su pull request: 
 
- Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request de la siguiente forma
+ Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request [_*Como Draft PR*_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) de la siguiente forma
  
   `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
 
