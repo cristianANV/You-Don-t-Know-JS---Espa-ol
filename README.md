@@ -62,13 +62,11 @@ Para este proceso se debe tener en cuenta la seccion que se tradujo con los sigu
 
 ### Aclaraciones finales sobre la traducción
 
-Esta es una traducción hecha por contribuidores por lo que su interpretacion puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anecdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demas textos en tercera persona. El autor se refiere constantemente al lector con la palabra "you", por lo cual debemos referirnos al lector como "usted" para mantener el nivel de formalismo del los libros originales.
-
-# El order de traduccíon será el siguiente
+Esta es una traducción hecha por contribuidores por lo que su interpretacion puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anecdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demas textos en tercera persona. El autor se refiere constantemente al lector con la palabra "you", por lo cual debemos referirnos al lector como "usted" para mantener el nivel de formalismo del los libros originales
 
 ## Titles
 
-En este momento vamos a comenzar el primer libro. Detalles de donde se va en el capitulo se detallarán acá:
+NOTA: no hay ningún orden para la traducción, como la filosofía es traducir solo pequeños párrafos, puede escoger cualquiera. Abajo los links para cada libro
 
 - ["Up & Going"](https://github.com/You-Dont-Know-JS-ES/Traduccion/tree/master/up%20%26%20going), 
 - ["Scope & Closures"](https://github.com/You-Dont-Know-JS-ES/Traduccion/tree/master/scope%20%26%20closures)
