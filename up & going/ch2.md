@@ -7,9 +7,9 @@ Introduciremos una serie de conceptos en este capítulo que no serán totalmente
 
 Especialmente si usted es nuevo en JavaScript, usted debería pasar un buen tiempo revisando los conceptos y los ejemplos de código múltiples veces. Cualquier buena construcción es creada ladrillo por ladrillo, así que no espere entender todo inmediatamente con la primera lectura.
 
-Su viaje para aprender JavaScript profundamente comienza aquí.
+Su viaje para aprender profundamente JavaScript comienza aquí.
 
-**Nota:** Como dije en el Capítulo 1, usted debería definitivamente intentar todo este código por su cuenta mientras lee y avanza en este capítulo. Tenca presente que parte del código aquí asume capacidades introducidas en la nueva versión de JavaScript cuando se escribió este capítulo (referidos comúnmente como "ES6" para la 6ta edición de ECMAScript -- el nombre oficial de la especificación JS). Si usted usa un navegador más viejo, anterior a ES6, el código podría no funcionar. Debería usar una actualización reciente de un navegador moderno (como Chrome, Firefox, o IE).
+**Nota:** Como dije en el Capítulo 1, usted debería definitivamente intentar todo este código por su cuenta mientras lee y avanza en este capítulo. Tenga presente que parte del código aquí asume capacidades introducidas en la nueva versión de JavaScript cuando se escribió este capítulo (referidos comúnmente como "ES6" para la 6ta edición de ECMAScript -- el nombre oficial de la especificación JS). Si usted usa un navegador más viejo, anterior a ES6, el código podría no funcionar. Debería usar una actualización reciente de un navegador moderno (como Chrome, Firefox, o IE).
 
 ## Valores y Tipos
 
@@ -55,7 +55,7 @@ Note como en este código la variable `a` guarda todos los diferentes tipos del 
 
 **Advertencia:** Esto es un bug antiguo en JS, pero es uno que probablemente nunca se arregle. Demasiado código en internet se basa en el bug y por lo tanto ¡arreglarlo causaría muchos mas errores!
 
-También note `a = undefined`. Le estamos estableciendo explícitamente a `a` el valor de `undefined`, pero eso no es comportalmente diferente de una variable que aun no tiene valor establecido, como con la línea `var a;` al principio del código. Una variable puede llegar a este valor "undefined" de varias formas diferentes, incluyendo funciones que no retornan valores y el uso del operador `void`.
+También note `a = undefined`. Le estamos estableciendo explícitamente a `a` el valor de `undefined`, pero eso no es de comportamiento diferente de una variable que aun no tiene valor establecido, como con la línea `var a;` al principio del código. Una variable puede llegar a este valor "undefined" de varias formas diferentes, incluyendo funciones que no retornan valores y el uso del operador `void`.
 
 ### Objetos
 
@@ -83,7 +83,7 @@ Podría ser útil pensar en este valor `obj` visualmente:
 
 Las propiedades se pueden acceder con la _notación punto_ (ej. `obj.a`) o la _notación corchetes cuadrados_ (ej. `obj["a"]`). La notación punto es más corta y generalmente más fácil de leer, y por lo tanto es preferida cuando sea posible.
 
-La notación corchetes cuadrados es útil si usted tiene un nombre de propiedad que tiene caracteres especiales, como `obj["hello world!"]` -- dichas propiedades son frecuentemente llamadas _llaves_ cuando se acceden con la notación de corchetes cuadrados. La notación `[ ]` requiere ya sea una variable (explicado a continuación) o un _literal_ `string` (el cual necesita ser envuelto en `" .. "` o `' .. '`).
+La notación corchetes cuadrados es útil si usted tiene un nombre de propiedad que tiene caracteres especiales, como `obj["¡hola mundo!"]` -- dichas propiedades son frecuentemente llamadas _llaves_ cuando se acceden con la notación de corchetes cuadrados. La notación `[ ]` requiere ya sea una variable (explicado a continuación) o un _literal_ `string` (el cual necesita ser envuelto en `" .. "` o `' .. '`).
 
 Por supuesto, la notación de corchetes cuadrados también es útil si usted quiere acceder a una propiedad/llave pero el nombre está guardado en otra variable, por ejemplo:
 
@@ -101,7 +101,7 @@ obj["b"];		// 42
 
 **Nota:** Para más información de los `object` de JavaScript , vea el título *Prototipos this y Object* de esta serie de libros, específicamente el Capítulo 3.
 
-Hay otro par de tipos de valor con los que usted interactuará comunmente en programas de JavaScript: *array* y *function*. Pero en vez de ser tipos propios incorporados, estos deberían ser pensados más como subtipos -- versiones especializdas del tipo `object`.
+Hay otro par de tipos de valor con los que usted interactuará comunmente en programas de JavaScript: *array* y *function*. Pero en vez de ser tipos propios incorporados, estos deberían ser pensados más como subtipos -- versiones especializadas del tipo `object`.
 
 #### Arreglos
 
@@ -143,7 +143,7 @@ function foo() {
 	return 42;
 }
 
-foo.bar = "hello world";
+foo.bar = "hola mundo";
 
 typeof foo;			// "function"
 typeof foo();		// "number"
@@ -161,11 +161,11 @@ Los tipos y subtipos incorporados que acabamos de discutir tienen ciertos compor
 Por ejemplo:
 
 ```js
-var a = "hello world";
+var a = "hola mundo";
 var b = 3.14159;
 
 a.length;				// 11
-a.toUpperCase();		// "HELLO WORLD"
+a.toUpperCase();		// "HOLA MUNDO"
 b.toFixed(4);			// "3.1416"
 ```
 
@@ -173,27 +173,27 @@ El "cómo" detrás de poder llamar a `a.toUpperCase()` es más complicado de lo 
 
 Brevemente, existe un objeto que hace las veces de envoltura de tipo `String` (`S` en mayúscula), llamado comúnmente como "nativo", que se empareja con el tipo primitivo `string`; es este objeto envoltura el que define el método `toUpperCase()` en su prototipo.
 
-Cuando usted utiliza un valor primitivo (como `"hello world")` como un `objeto` que hace referencia a una propiedad o a un método (por ejemplo `a.toUpperCase()` en el fragmento anterior), Javascript automáticamente "empaqueta" dicho valor primitivo en su objeto envoltorio contraparte (escondido bajo las cubiertas).
+Cuando usted utiliza un valor primitivo (como `"hola mundo"`) como un `objeto` que hace referencia a una propiedad o a un método (por ejemplo `a.toUpperCase()` en el fragmento anterior), Javascript automáticamente "empaqueta" dicho valor primitivo en su objeto envoltorio contraparte (escondido bajo las cubiertas).
 
 Un valor `string` puede ser envuelto por un objeto `String`, un `number` puede ser envuelto por un objeto `Number` y un `boolean` puede ser envuelto por un objeto `Boolean`. La mayor parte del tiempo usted no necesitará preocuparse por estos objetos envoltura o no tendrá que usarlos directamente -- Prefiera los valores primitivos en prácticamente todos los casos y Javascript se encargará del resto por usted.
 
 **Nota:** Para más información de tipos nativos de JavaScript y empaquetado, consulte el capítulo 3 del título *Tipos & Gramática* de esta serie. Para un mejor entendimiento del prototipo de un objeto, consulte el título *this & Prototipos de objetos* del capítulo 5 de esta serie.
 
-### Comparing Values
+### Comparando Valores
 
-There are two main types of value comparison that you will need to make in your JS programs: *equality* and *inequality*. The result of any comparison is a strictly `boolean` value (`true` or `false`), regardless of what value types are compared.
+Hay dos tipos principales de comparación de valores que usted necesitará hacer en sus programas JS: *igualdad* y *desigualdad*. El resultado de cualquier comparación es estrictamente un valor `boolean` (`true` o `false`), independientemente de que tipos de valor sean comparados.
 
-#### Coercion
+#### Coerción
 
-We talked briefly about coercion in Chapter 1, but let's revisit it here.
+Hablamos brevemente acerca de la coerción en el Capítulo 1, pero vamos a repasarlo acá.
 
-Coercion comes in two forms in JavaScript: *explicit* and *implicit*. Explicit coercion is simply that you can see obviously from the code that a conversion from one type to another will occur, whereas implicit coercion is when the type conversion can happen as more of a non-obvious side effect of some other operation.
+La coerción se presenta de dos formas en JavaScript: *explícita* e *implícita*. La coerción explícita es simplemente que usted puede ver obviamente del código que una conversión de un tipo a otro va a ocurrir, mientras que la coerción implícita es cuando la conversión de tipo puede ocurrir más como un efecto secundario no obvio de alguna otra operación.
 
-You've probably heard sentiments like "coercion is evil" drawn from the fact that there are clearly places where coercion can produce some surprising results. Perhaps nothing evokes frustration from developers more than when the language surprises them.
+Usted probablemente ha escuchado frases como "la coerción es malvada" que viene del hecho de que hay claramente lugares donde la coerción puede producir algunos resultados sorpresivos. Tal vez nada evoca más frustración para los desarrolladores que cuando el lenguaje los sorprende.
 
-Coercion is not evil, nor does it have to be surprising. In fact, the majority of cases you can construct with type coercion are quite sensible and understandable, and can even be used to *improve* the readability of your code. But we won't go much further into that debate -- Chapter 4 of the *Types & Grammar* title of this series covers all sides.
+La coerción no es malvada, ni tampoco tiene que ser sorpresiva. De hecho, la mayoría de casos que usted puede construir con coerción de tipos son bastante sensibles y entendibles, e incluso pueden ser usados para *mejorar* la legibilidad de su código. Pero no entraremos más en ese debate -- el Capítulo 4 de título *Tipos y Gramática* de esta serie cubre todos los aspectos.
 
-Here's an example of *explicit* coercion:
+Aquí hay un ejemplo de coerción *explícita*:
 
 ```js
 var a = "42";
@@ -201,18 +201,18 @@ var a = "42";
 var b = Number( a );
 
 a;				// "42"
-b;				// 42 -- the number!
+b;				// 42 -- ¡el número!
 ```
 
-And here's an example of *implicit* coercion:
+Y aquí un ejemplo de coerción *implícita*:
 
 ```js
 var a = "42";
 
-var b = a * 1;	// "42" implicitly coerced to 42 here
+var b = a * 1;	// aquí "42" es implicitamente coercionado a 42
 
 a;				// "42"
-b;				// 42 -- the number!
+b;				// 42 -- ¡el número!
 ```
 
 #### Truthy & Falsy
