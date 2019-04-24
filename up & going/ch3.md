@@ -21,23 +21,23 @@ Este entendimiento crítico sobre el "alcance léxico" es en lo que nos basaremo
 
 Una aplicación importante de la clausura es el patrón modular, como fue introducido brevemente en este libro en el Capítulo 2. El patrón modular es quizás el patrón de organización de código más frecuente en todo JS; un entendimiento profundo de dicho patrón debería ser una de sus más altas prioridades.
 
-## this & Object Prototypes
+## this & Prototipos de Objetos
 
-Perhaps one of the most widespread and persistent mistruths about JavaScript is that the `this` keyword refers to the function it appears in. Terribly mistaken.
+Quizás uno de los conceptos erróneos más extendidos y constantes acerca de JavaScript es que la palabra clave `this` se refiere a la función donde aparece. Totalmente erróneo.
 
-The `this` keyword is dynamically bound based on how the function in question is executed, and it turns out there are four simple rules to understand and fully determine `this` binding.
+La palabra clave `this` está dinámicamente enlazada en cómo la función en cuestión es ejecutada, y resulta que hay cuatro reglas simples para entender y determinar completamente el enlazamiento de `this`.
 
-Closely related to the `this` keyword is the object prototype mechanism, which is a look-up chain for properties, similar to how lexical scope variables are found. But wrapped up in the prototypes is the other huge miscue about JS: the idea of emulating (fake) classes and (so-called "prototypal") inheritance.
+El mecanismo de prototipo de objeto está cercanamente relacionado a la palabra clave `this`, el cual es una búsqueda en cadena de propiedades, similar a como el alcance léxico de variables es localizado. Pero envolverlo todo en prototipos es la otra gran idea equivocada que se tiene sobre JS: la idea de emular (falsamente) clases y herencia (llamada como "herencia prototípica").
 
-Unfortunately, the desire to bring class and inheritance design pattern thinking to JavaScript is just about the worst thing you could try to do, because while the syntax may trick you into thinking there's something like classes present, in fact the prototype mechanism is fundamentally opposite in its behavior.
+Desafortunadamente, el deseo de traer el patrón de diseño de clase y herencia pensando en JavaSript es lo peor que usted podría intentar hacer, porque mientras la sintaxis puede engañarle en pensar que hay algo como las clases, realmente el mecanismo de prototipo es fundamentalmente lo contrario a su comportamiento.
 
-What's at issue is whether it's better to ignore the mismatch and pretend that what you're implementing is "inheritance," or whether it's more appropriate to learn and embrace how the object prototype system actually works. The latter is more appropriately named "behavior delegation."
+Lo que está en discusión es si es mejor ignorar la desigualdad de los conceptos y pretender que lo que usted está implementando es "herencia", o si es más apropiado aprender y aceptar cómo funciona realmente el sistema de prototipos de objetos. Este último se denomina más apropiadamente "delegación de comportamiento".
 
-This is more than syntactic preference. Delegation is an entirely different, and more powerful, design pattern, one that replaces the need to design with classes and inheritance. But these assertions will absolutely fly in the face of nearly every other blog post, book, and conference talk on the subject for the entirety of JavaScript's lifetime.
+Esto es más que una preferencia sintáctica. La delegación es un patrón de diseño completamente diferente y más poderoso, que reemplaza la necesidad de diseñar con clases y herencia. Sin embargo, estas afirmaciones son absolutamente distintas para casi cualquier otra publicación de blog, libro y conferencia sobre el tema durante toda la vida de JavaScript.
 
-The claims I make regarding delegation versus inheritance come not from a dislike of the language and its syntax, but from the desire to see the true capability of the language properly leveraged and the endless confusion and frustration wiped away.
+Las afirmaciones que hago con respecto a la delegación frente a la herencia no provienen de una aversión al lenguaje y su sintaxis, sino del deseo de ver la verdadera capacidad del lenguaje aprovechado adecuadamente y así eliminar la confusión y frustración sin fin sobre este tema.
 
-But the case I make regarding prototypes and delegation is a much more involved one than what I will indulge here. If you're ready to reconsider everything you think you know about JavaScript "classes" and "inheritance," I offer you the chance to "take the red pill" (*Matrix* 1999) and check out Chapters 4-6 of the *this & Object Prototypes* title of this series.
+Pero el caso que planteo acerca de los prototipos y la delegación es uno mucho más complicado de lo que voy a hacer aquí. Si usted está listo para reconsiderar todo lo que usted piensa y sabe acerca de las "clases" y "herencia" en JavaScript, le ofrezco la oportunidad de "tomar la píldora roja" (*Matrix* 1999) y consultar los capitulos 4-6 de este título llamado *this & Prototipos de Objetos* de esta serie.
 
 ## Types & Grammar
 
