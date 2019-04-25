@@ -1,10 +1,10 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
-# ¿Qué es You-Dont-Know-JS-ES/Traduccion ?
+# ¿Qué es You-Dont-Know-JS-ES/Traduccion?
 
-Es un repositorio que almacena la éxitosa serie de libros de JavaScript "You Don't Know JS" de Kyle Simpson un fork del repositorio original, con la intención de que estos sean traducidos al idioma español.
+Es un repositorio que almacena la exitosa serie de libros de JavaScript "You Don't Know JS" de Kyle Simpson un fork del repositorio original, con la intención de que estos sean traducidos al idioma español.
 
-Aunque este es un repo personal, hace parte del repo de `Staging`, proceso previo para hacer merge a el repo original. Esta decisión se tomó conjuntamente con @getify para reducir el ruido en el repo master, [siga conversación acá](https://github.com/getify/You-Dont-Know-JS/pull/1378).
+Aunque este es un repo personal, hace parte del repo de `Staging`, proceso previo para hacer merge al repo original. Esta decisión se tomó conjuntamente con @getify para reducir el ruido en el repo master, [siga conversación acá](https://github.com/getify/You-Dont-Know-JS/pull/1378).
 
 Sin embargo, para todas las contribuciones habrá un `Contributors` pages en Español. Siéntase libre de empezar a traducir secciones que aún no hayan sido traducidas, ya sea que conozca o no el lenguaje es un excelente ejercicio para aprender y entender detalles sobre JavaScript que quizás no se haya imaginado antes.
 
@@ -26,43 +26,44 @@ Sin embargo, para todas las contribuciones habrá un `Contributors` pages en Esp
 > hará un "Fetch" del git y toda la info que esté remota, haciendo que su rama `master`
 > local cuando se haga un `git pull` tome toda la información del repositorio remoto.
 > Luego puede sacar todos los branches del `master` actualizado.
-> De tal manera que siempre recomendamos actualizar su rama `master`.`git pull`
+> De tal manera que siempre recomendamos actualizar su rama `master`.
 
 ## Recomendaciones básicas para el proceso de aprobación de un pull request
 
-`Por favor hacer un PR antes de comenzar una traducción` Esto es un indicador para la comunidad de que usted va a trabajar en una traducción y evitar que cuando usted termine se de cuenta de que ya alguién trabajó en eso antes.
+`Por favor hacer un PR antes de comenzar una traducción`, esto es un indicador para la comunidad de que usted va a trabajar en una traducción y evitar que cuando usted termine se de cuenta de que ya alguien trabajó en eso antes.
 
 La unidad mínima de traducción es en Markdown un bloque de `###` ó `##`.
 
 ### Sobre el nombre de su(s) branch(es):
 
 En lo posible, recomendamos nombrar los branches con el siguiente formato: 
-  `pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
+
+`pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
 
 ### Sobre el nombre de su pull request: 
 
- Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request [_*Como Draft PR*_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) de la siguiente forma
+Una vez se haya decidido a traducir una sección de cualquiera de los libros, por favor asignar un título a su pull request [_*Como Draft PR*_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) de la siguiente forma:
  
-  `[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
+`[InProgress]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso. 
 
 Si luego de realizar los cambios necesarios, considera que su traducción definitivamente se encuentra lista para revisión por favor renombrar su pull request como
   
-  `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
+`[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
 
 ### Importante: 
 
 La filosofía de trabajo es: traducir el archivo, y todo trabajo pendiente se deja en inglés, para que sea claro para los colaboradores lo que hace falta por traducir.
 
-Para este proceso se debe tener en cuenta la seccion que se tradujo con los siguientes parametros:
+Para este proceso se debe tener en cuenta la sección que se tradujo con los siguientes parámetros:
 
-1. Revisar si el branch ya se encuntre de manera remota para evitar multiples ramas con nombres iguales `git branch -r`. Si el branch existe y falta terminar la traducción o desea corregirlo, hacer el pull correspondiente al branch a editar `git pull origin pr/../..`
+1. Revisar si el branch ya se encuentra de manera remota para evitar múltiples ramas con nombres iguales `git branch -r`. Si el branch existe y falta terminar la traducción o desea corregirlo, hacer el pull correspondiente al branch a editar `git pull origin pr/../..`
 2. Si el branch no existe, al crearlo, el nombre debe seguir la siguiente estructura teniendo en cuenta los títulos que se representan con el signo numeral (#) en el .md. Con base en lo anterior, se espera lo siguiente: `pr/título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
 3. Realizar el debido push al repositorio de su cuenta. Si ya su traducción definitivamente se encuentra lista para revisión, renombrar  el PR como `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` para que el revisor quede notificado.
-4. Si ya ha hecho varios commits y piensa subir su versión final, por favor hacer un rebase interactivo en su local a master y dejar un solo commit con el mismo nombre del branch. Para mayor información sobre como realizar esto, visite este [enlace](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+4. Si ya ha hecho varios commits y piensa subir su versión final, por favor hacer un rebase interactivo en su local a master y dejar un sólo commit con el mismo nombre del branch. Para mayor información sobre cómo realizar esto, visite este [enlace](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
 ### Aclaraciones finales sobre la traducción
 
-Esta es una traducción hecha por contribuidores por lo que su interpretacion puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anecdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demas textos en tercera persona. El autor se refiere constantemente al lector con la palabra "you", por lo cual debemos referirnos al lector como "usted" para mantener el nivel de formalismo del los libros originales
+Esta es una traducción hecha por contribuidores por lo que su interpretación puede variar de acuerdo con el traductor. Es importante tener en cuenta que las anécdotas o pensamientos que el autor mencione, traducirlos en primera persona y los demás textos en tercera persona. El autor se refiere constantemente al lector con la palabra "you", por lo cual debemos referirnos al lector como "usted" para mantener el nivel de formalismo de los libros originales.
 
 ## Titles
 
