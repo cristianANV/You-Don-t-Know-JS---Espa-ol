@@ -1,25 +1,25 @@
-# Usted no sabe JS: En marcha
-# Chapter 3: Dentro de YDKJS
+# You Don't Know JS: Up & Going
+# Capítulo 3: Dentro de YDKJS
 
-¿De que se trata esta serie? Coloquemoslo simple, es sobre tomar seriamente la tarea de aprender *todas las partes de Javascript*, no sólo las partes del subconjunto del lenguaje que algunos llaman "las partes buenas," y no sólo la mínima cantidad que usted necesita para realizar bien sus tareas en el trabajo.
+¿De qué se trata esta serie? Coloquémoslo simple, es sobre tomar seriamente la tarea de aprender *todas las partes de Javascript*, no sólo las partes del subconjunto del lenguaje que algunos llaman "las partes buenas", y no sólo la mínima cantidad que usted necesita para realizar bien sus tareas en el trabajo.
 
-Serios desarrolladores en otros lenguajes esperan colocar todo su esfuerzo para aprender la mayor parte (o todo) sobre los lenguajes (o el lenguaje) con los que ellos escriben principalmente, pero los desarrolladores de JS parece que estan fuera de esta multitud debido a que ellos no suelen aprender muchas cosas sobre este lenguaje. Esto no es tan bueno, y no es algo que debamos continuar permitiendo que sea la norma.
+Desarrolladores serios en otros lenguajes esperan colocar todo su esfuerzo para aprender la mayor parte (o todo) sobre los lenguajes (o el lenguaje) con los que ellos escriben principalmente, pero los desarrolladores de JS parece que están fuera de esta multitud debido a que ellos no suelen aprender muchas cosas sobre este lenguaje. Esto no es tan bueno, y no es algo que debamos continuar permitiendo que sea la norma.
 
-La serie de libros "Usted no sabe JS" (*UNSJS*) o en inglés *You Don't Know JS* (*YDKJS*) se encuentra en el marcado contraste de los típicos enfoques de aprender JS, y es diferente a casí cualquier otro libro sobre JS que usted vaya a leer. Aquí lo desafía a ir más allá de su zona de confort y realizarse a sí mismo preguntas como "¿porque?" para cada simple comportamiento que usted encuentre. ¿Está listo para ese desafío?.
+La serie de libros "Usted no sabe JS" (*UNSJS*) o en inglés *You Don't Know JS* (*YDKJS*) se encuentra en el marcado contraste de los típicos enfoques de aprender JS, y es diferente a casí cualquier otro libro sobre JS que usted vaya a leer. Aquí lo desafía a ir más allá de su zona de confort y realizarse a sí mismo preguntas como "¿por qué?" para cada simple comportamiento que usted encuentre. ¿Está listo para ese desafío?
 
-Voy a usar este capítulo final para resumir brevemente que es lo que espero del resto de la serie de libros, y cómo ir de la manera más efectiva para construir una base de aprendizaje en JS sobre *YDKJS*.
+Voy a usar este capítulo final para resumir brevemente qué es lo que espero del resto de la serie de libros, y cómo ir de la manera más efectiva para construir una base de aprendizaje en JS sobre *YDKJS*.
 
-## Scope & Closures
+## Alcance & Clausuras
 
-Perhaps one of the most fundamental things you'll need to quickly come to terms with is how scoping of variables really works in JavaScript. It's not enough to have anecdotal fuzzy *beliefs* about scope.
+Quizás una de las cosas más fundamentales que usted necesitará rápidamente entender es cómo el alcance de las variables realmente funciona en JavaScript. No es suficiente tener *creencias* difusas puntuales acerca del alcance.
 
-The *Scope & Closures* title starts by debunking the common misconception that JS is an "interpreted language" and therefore not compiled. Nope.
+El título *Alcance & y Clausuras* empieza por desmitificar la típica idea equivocada que JS es un "lenguaje interpretado" y por lo tanto no compilado. No.
 
-The JS engine compiles your code right before (and sometimes during!) execution. So we use some deeper understanding of the compiler's approach to our code to understand how it finds and deals with variable and function declarations. Along the way, we see the typical metaphor for JS variable scope management, "Hoisting."
+El motor de JS compila su código justo antes de (¡Y a veces durante!) la ejecución. Así que nosotros tendremos un entendimiento algo más profundo sobre el enfoque que el compilador utiliza en nuestro código para entender cómo encuentra y trata con las declaraciones de variables y funciones. En el camino, veremos la típica metáfora para el manejo del alcance de variables en JS, llamado en inglés "Hoisting".
 
-This critical understanding of "lexical scope" is what we then base our exploration of closure on for the last chapter of the book. Closure is perhaps the single most important concept in all of JS, but if you haven't first grasped firmly how scope works, closure will likely remain beyond your grasp.
+Este entendimiento crítico sobre el "alcance léxico" es en lo que nos basaremos para nuestra exploración de las clausuras para el último capítulo del libro. La clausura es quizás el concepto más importante de todo JS, pero si usted no ha primero comprendido firmemente cómo el alcance funciona, la clausura probablemente permanecerá lejos de su comprensión.
 
-One important application of closure is the module pattern, as we briefly introduced in this book in Chapter 2. The module pattern is perhaps the most prevalent code organization pattern in all of JavaScript; deep understanding of it should be one of your highest priorities.
+Una aplicación importante de la clausura es el patrón modular, como fue introducido brevemente en este libro en el Capítulo 2. El patrón modular es quizás el patrón de organización de código más frecuente en todo JS; un entendimiento profundo de dicho patrón debería ser una de sus más altas prioridades.
 
 ## this & Object Prototypes
 

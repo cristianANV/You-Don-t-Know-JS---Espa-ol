@@ -1,5 +1,5 @@
 # You Don't Know JS: Up & Going
-# Cápitulo 1: Introducción a la programación
+# Capítulo 1: Introducción a la Programación
 
 Bienvenidos a la serie *You Don't Know JS* (*YDKJS*)
 
