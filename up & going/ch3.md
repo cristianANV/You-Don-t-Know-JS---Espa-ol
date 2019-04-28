@@ -3,7 +3,7 @@
 
 ¿De qué se trata esta serie? Coloquémoslo simple, es sobre tomar seriamente la tarea de aprender *todas las partes de Javascript*, no sólo las partes del subconjunto del lenguaje que algunos llaman "las partes buenas", y no sólo la mínima cantidad que usted necesita para realizar bien sus tareas en el trabajo.
 
-Desarrolladores serios en otros lenguajes esperan colocar todo su esfuerzo para aprender la mayor parte (o todo) sobre los lenguajes (o el lenguaje) con los que ellos escriben principalmente, pero los desarrolladores de JS parecen que están fuera de esta multitud debido a que ellos no suelen aprender muchas cosas sobre este lenguaje. Esto no es tan bueno, y no es algo que debamos continuar permitiendo que sea la norma.
+Desarrolladores serios en otros lenguajes esperan colocar todo su esfuerzo para aprender la mayor parte (o todo) sobre los lenguajes (o el lenguaje) con los que ellos escriben principalmente, pero los desarrolladores de JS parece que están fuera de esta multitud debido a que ellos no suelen aprender muchas cosas sobre este lenguaje. Esto no es tan bueno, y no es algo que debamos continuar permitiendo que sea la norma.
 
 La serie de libros "Usted no sabe JS" (*UNSJS*) o en inglés *You Don't Know JS* (*YDKJS*) se encuentra en el marcado contraste de los típicos enfoques de aprender JS, y es diferente a casí cualquier otro libro sobre JS que usted vaya a leer. Aquí lo desafía a ir más allá de su zona de confort y realizarse a sí mismo preguntas como "¿por qué?" para cada simple comportamiento que usted encuentre. ¿Está listo para ese desafío?
 
