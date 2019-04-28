@@ -15,7 +15,7 @@ Quizás una de las cosas más fundamentales que usted necesitará rápidamente e
 
 El título *Alcance & y Clausuras* empieza por desmitificar la típica idea equivocada que JS es un "lenguaje interpretado" y por lo tanto no compilado. No.
 
-El motor de JS compila su código justo antes de (¡y a veces durante!) la ejecución. Así que nosotros tendremos un entendimiento algo más profundo sobre el enfoque que el compilador utiliza en nuestro código para entender cómo encuentra y trata con las declaraciones de variables y funciones. En el camino, veremos la típica metáfora para el manejo del alcance de variables en JS, llamado en inglés "Hoisting".
+El motor de JS compila su código justo antes de (¡Y a veces durante!) la ejecución. Así que nosotros tendremos un entendimiento algo más profundo sobre el enfoque que el compilador utiliza en nuestro código para entender cómo encuentra y trata con las declaraciones de variables y funciones. En el camino, veremos la típica metáfora para el manejo del alcance de variables en JS, llamado en inglés "Hoisting".
 
 Este entendimiento crítico sobre el "alcance léxico" es en lo que nos basaremos para nuestra exploración de las clausuras para el último capítulo del libro. La clausura es quizás el concepto más importante de todo JS, pero si usted no ha primero comprendido firmemente cómo el alcance funciona, la clausura probablemente permanecerá lejos de su comprensión.
 
