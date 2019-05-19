@@ -39,19 +39,19 @@ Las afirmaciones que hago con respecto a la delegación frente a la herencia no 
 
 Pero el caso que planteo acerca de los prototipos y la delegación es uno mucho más complicado de lo que voy a hacer aquí. Si usted está listo para reconsiderar todo lo que usted piensa y sabe acerca de las "clases" y "herencia" en JavaScript, le ofrezco la oportunidad de "tomar la píldora roja" (*Matrix* 1999) y consultar los capitulos 4-6 de este título llamado *this & Prototipos de Objetos* de esta serie.
 
-## Types & Grammar
+## Tipos y Gramática
 
-The third title in this series primarily focuses on tackling yet another highly controversial topic: type coercion. Perhaps no topic causes more frustration with JS developers than when you talk about the confusions surrounding implicit coercion.
+El tercer título de esta serie primeramente se enfoca en abordar otro tema muy controversial: la coerción de tipos. Quizás ningún tópico causa mayor frustración en los desarrolladores de JS que cuando se habla acerca de las confusiones alrededor de la coerción implícita.
 
-By far, the conventional wisdom is that implicit coercion is a "bad part" of the language and should be avoided at all costs. In fact, some have gone so far as to call it a "flaw" in the design of the language. Indeed, there are tools whose entire job is to do nothing but scan your code and complain if you're doing anything even remotely like coercion.
+En gran medida, la sabiduría convencional es que la coerción implícita es una "mala parte" del lenguaje y debería evitarse a toda costa. De hecho, algunos han ido tan lejos en llamarlo una "falla" en el diseño del lenguaje. En realidad hay herramientas cuyo su único trabajo es no hacer nada más que escanear su código y quejarse si usted está haciendo algo remotamente parecido a la coerción.
 
-But is coercion really so confusing, so bad, so treacherous, that your code is doomed from the start if you use it?
+Pero es realmente la coerción tan confusa, tan mala, tan traicionera, que su código está condenado desde el momento que usted lo usa?
 
-I say no. After having built up an understanding of how types and values really work in Chapters 1-3, Chapter 4 takes on this debate and fully explains how coercion works, in all its nooks and crevices. We see just what parts of coercion really are surprising and what parts actually make complete sense if given the time to learn.
+Yo digo que no. Después de haber abordado y entendido cómo los tipos y valores realmente funcionan en los Capítulos 1-3, el Capítulo 4 se encarga de este debate y explica por completo cómo la coerción funciona en todos los aspectos. Veremos qué partes de la coerción son realmente sorprendentes y qué partes realmente tienen completo sentido si se les da el tiempo para aprender.
 
-But I'm not merely suggesting that coercion is sensible and learnable, I'm asserting that coercion is an incredibly useful and totally underestimated tool that *you should be using in your code.* I'm saying that coercion, when used properly, not only works, but makes your code better. All the naysayers and doubters will surely scoff at such a position, but I believe it's one of the main keys to upping your JS game.
+Pero no estoy sólo sugiriendo que la coerción es razonable y se puede aprender, estoy afirmando que la coerción es una herramienta increíblemente útil y totalmente subestimada que *usted debería usar en su código*. Estoy diciendo que esa coerción, cuando se usa adecuadamente, no sólo funciona, sino hace que su código sea mejor. Seguramente todos los que no están de acuerdo con esto se burlarán de esta posición sobre la coerción, pero creo que es una de las principales claves para aumentar tu juego en JS.
 
-Do you want to just keep following what the crowd says, or are you willing to set all the assumptions aside and look at coercion with a fresh perspective? The *Types & Grammar* title of this series will coerce your thinking.
+Usted quiere seguir lo que la gente dice, o está dispuesto a colocar a un lado todas las suposiciones y mirar la coerción con una prespectiva fresca? El título *Tipos y Gramática* de esta serie cambiará su forma de pensar.
 
 ## Async & Performance
 
