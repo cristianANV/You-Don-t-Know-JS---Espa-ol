@@ -50,6 +50,8 @@ Si luego de realizar los cambios necesarios, considera que su traducción defini
   
 `[Done]título_del_libro/nombre_de_capitulo/#titulo/##subtema/###subtema` según sea el caso.
 
+
+
 ### Importante: 
 
 La filosofía de trabajo es: traducir el archivo, y todo trabajo pendiente se deja en inglés, para que sea claro para los colaboradores lo que hace falta por traducir.
